@@ -18,3 +18,9 @@ model/*.safetensors
 phase1-diagnostics.txt
 prototype/backend/llama-server.log
 submission.json
+
+# Phase 4B local manuals and retrieval database
+prototype/data/documents/
+prototype/data/*.db
+prototype/data/*.db-shm
+prototype/data/*.db-wal
