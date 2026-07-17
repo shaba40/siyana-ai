@@ -17,7 +17,7 @@ Local document retrieval will be added in Phase 4B.
 """
 
 from __future__ import annotations
-
+from prototype.backend.app.rag_api import router as rag_router
 import asyncio
 import json
 import os
@@ -684,6 +684,7 @@ async def chat(
         ),
     )
 
+app.include_router(rag_router)
 
 @app.get("/")
 async def index() -> FileResponse:
