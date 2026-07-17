@@ -1,0 +1,40 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b10055-e8f19cc0a
+model      : model/Qwen3-4B-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> /no_think
+
+Respond only in English.
+
+In one concise paragraph, explain why preventive maintenance is important for a small manufacturing company.
+
+Mention equipment reliability, worker safety, downtime and maintenance costs.
+Preventive maintenance is crucial for a small manufacturing company as it ensures equipment reliability, reduces the risk of unexpected breakdowns, and minimizes downtime, which is essential for maintaining production schedules and meeting customer demands. It also enhances worker safety by identifying and addressing potential hazards before they cause accidents, and it helps control maintenance costs by addressing issues early rather than dealing with more expensive emergency repairs or replacements.
+
+[ Prompt: 44.6 t/s | Generation: 10.1 t/s ]
+
+
+Exiting...
+Offline inference manually verified on 2026-07-17T09:01:37+01:00.

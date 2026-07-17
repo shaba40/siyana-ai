@@ -1,0 +1,73 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b10055-e8f19cc0a
+model      : /home/hama/Projects/siyana-ai/model/Qwen3-4B-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> /no_think
+
+Répondez uniquement en français.
+
+Vous êtes un assistant local de maintenance industrielle. Donnez une réponse concise, structurée et axée sur la sécurité.
+
+Le moteur électrique d'une machine industrielle chauffe après dix minutes de fonctionnement.
+
+Présentez :
+1. Les causes possibles
+2. Les vérifications préliminaires sûres
+3. Les conditions nécessitant l'arrêt du travail
+4. La prochaine action recommandée
+5. Les informations supplémentaires nécessaires
+
+Précisez ... (truncated)
+**Réponse :**
+
+**1. Causes possibles :**  
+- Surcharge électrique ou mécanique.  
+- Problèmes de ventilation ou de refroidissement.  
+- Défaillance du moteur (bobine, coussets, etc.).  
+- Panne d’alimentation ou de câblage.  
+- Problèmes de synchronisation ou de commande.  
+
+**2. Vérifications préliminaires sûres :**  
+- Arrêter immédiatement la machine et isoler toutes les sources d’énergie.  
+- Vérifier l’état des câbles et des connecteurs.  
+- Contrôler le niveau d’huile et l’état des pièces mécaniques.  
+- Évaluer l’enthalpie et la température du moteur.  
+- Vérifier l’absence de fumée, de bruit anormal ou de vibrations excessives.  
+
+**3. Conditions nécessitant l’arrêt du travail :**  
+- Température du moteur dépassant les valeurs normales.  
+- Présence de fumée, de bruit anormal ou de vibrations excessives.  
+- Défaillance de la protection thermique ou de la sécurité.  
+- Détecter un défaut visible ou un dysfonctionnement inattendu.  
+
+**4. Prochaine action recommandée :**  
+- Arrêter la machine et isoler toutes les sources d’énergie.  
+- Effectuer une inspection visuelle et un diagnostic technique.  
+- Contacter un technicien qualifié pour une vérification approfondie.
+
+[ Prompt: 48.5 t/s | Generation: 9.7 t/s ]
+
+
+Exiting...

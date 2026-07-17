@@ -1,0 +1,82 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b10055-e8f19cc0a
+model      : /home/hama/Projects/siyana-ai/model/Qwen3-4B-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> /no_think
+
+Respond only in English.
+
+You are an offline industrial-maintenance support assistant. Give a concise, structured and safety-conscious response.
+
+A pneumatic cylinder on a production machine has become slow in both directions.
+
+Provide:
+1. Possible causes
+2. Safe preliminary checks
+3. Stop-work conditions
+4. Recommended next action
+5. Additional information required
+
+State clearly that the machine must be stopped and all energy sources isolated before inspection.
+
+Never recommend:
+- w ... (truncated)
+**1. Possible Causes:**  
+- Air pressure supply issue (low or inconsistent pressure)  
+- Faulty or clogged air filter/ regulator  
+- Leaks in the air line or cylinder  
+- Worn or damaged piston or cylinder bore  
+- Faulty solenoid valve or control system  
+- Contaminated or degraded lubricant  
+
+**2. Safe Preliminary Checks:**  
+- Confirm that the machine is powered down and all energy sources are isolated  
+- Check for visible leaks or damage to the air lines and cylinder  
+- Inspect the air filter and regulator for clogging or damage  
+- Verify that the air pressure supply is within the rated range  
+- Ensure all safety guards and interlocks are in place  
+
+**3. Stop-Work Conditions:**  
+- The machine must be stopped and all energy sources isolated before any inspection or repair  
+- No work is allowed on pressurized equipment  
+- No bypassing of guards or safety interlocks  
+- No work is allowed if the cause of the issue is unknown or if the system is not properly de-energized  
+
+**4. Recommended Next Action:**  
+- Stop the machine and isolate all energy sources  
+- Conduct a visual inspection of the air system and cylinder for leaks, damage, or contamination  
+- Check air pressure and filter/regulator condition  
+- If the issue is not resolved, contact a qualified maintenance technician or engineer for further diagnosis and repair  
+
+**5. Additional Information Required:**  
+- Current air pressure levels  
+- Visual inspection results of the air system and cylinder  
+- Any recent changes or maintenance performed on the system  
+- Details of the solenoid valve or control system operation  
+- Manufacturer’s specifications for the cylinder and
+
+[ Prompt: 43.9 t/s | Generation: 9.9 t/s ]
+
+> 

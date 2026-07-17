@@ -1,0 +1,5 @@
+Logical processors: 16
+CPU(s):                                  16
+Model name:                              13th Gen Intel(R) Core(TM) i7-13620H
+Thread(s) per core:                      2
+Core(s) per socket:                      8
