@@ -1,0 +1,35 @@
+{
+  "prompt_id": "FR-PM-001",
+  "language": "fr",
+  "category": "preventive_maintenance",
+  "prompt": "Créez une liste de contrôle de maintenance préventive pour un petit système pneumatique industriel. N'inventez pas de fréquence de maintenance.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Inclut l'arrêt, l'isolement et la dépressurisation",
+    "Inclut les filtres, régulateurs, tuyaux, raccords et fuites",
+    "Renvoie au plan de maintenance ou au manuel pour la fréquence"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nCréez une liste de contrôle de maintenance préventive pour un petit système pneumatique industriel. N'inventez pas de fréquence de maintenance.",
+  "response": "**Liste de contrôle de maintenance préventive pour un petit système pneumatique industriel**\n\n1. **Maintenance objective**  \n   Assurer le bon fonctionnement et la sécurité du système pneumatique en effectuant des inspections régulières et des vérifications des composants critiques.\n\n2. **Safe preparation and isolation**  \n   - Arrêter le système et isoler toutes les sources d’énergie (pression, électricité, etc.) selon les procédures de sécurité approuvées.  \n   - Vérifier que les dispositifs de sécurité (arrêt d’urgence, verrouillage, etc.) sont en place et fonctionnels.  \n   - Mettre en place des mesures de protection pour éviter les risques d’explosion ou de fuite de gaz.\n\n3. **Inspection checklist**  \n   - Vérifier l’état des composants mécaniques (pompes, vérins, actionneurs, etc.) pour détecter des usages, des fissures ou des déformations.  \n   - Contrôler les joints et les raccords pour s’assurer qu’il n’y a pas de fuites de fluide ou de gaz.  \n   - Examiner les filtres et les régulateurs pour vérifier leur efficacité et leur nettoyage.  \n   - Tester les capteurs, les sécurité, et les dispositifs de contrôle pour s’assurer qu’ils fonctionnent correctement.  \n   - Vérifier l’état des tubes, des câbles et des connexions pour détecter des dommages ou des usages.  \n   - Contrôler la pression du système pour s’assurer qu’elle est dans les limites spécifiées.  \n   - Vérifier l’état des composants électroniques (PLC, modules de commande, etc.) pour s’assurer qu’ils sont en bon état et non endommagés.\n\n4. **Documentation requirements**  \n   - Enregistrer les résultats des inspections, les dates de maintenance, et les anomalies détectées.  \n   - Mise à jour des manuels de maintenance et des procédures de sécurité en cas de modifications ou de défaillances.  \n   - Conserver des enregistrements des vérifications pour les audits internes ou",
+  "status": "success",
+  "started_at": "2026-07-17T10:06:16.991530+00:00",
+  "completed_at": "2026-07-17T10:07:14.879281+00:00",
+  "duration_seconds": 57.888,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 640,
+    "total_tokens": 1140,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

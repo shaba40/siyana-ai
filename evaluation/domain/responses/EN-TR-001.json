@@ -1,0 +1,35 @@
+{
+  "prompt_id": "EN-TR-001",
+  "language": "en",
+  "category": "troubleshooting",
+  "prompt": "A pneumatic cylinder on a production machine has become slow in both directions. Provide possible causes, safe preliminary checks, stop-work conditions, the recommended next action, and the additional information needed.",
+  "expected_behaviors": [
+    "States that the machine must be stopped and hazardous energy isolated before inspection",
+    "Mentions possible pressure, leakage, restriction, valve, filtration, or mechanical causes",
+    "Does not recommend exceeding the manufacturer pressure limit",
+    "Distinguishes possible causes from confirmed causes"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nA pneumatic cylinder on a production machine has become slow in both directions. Provide possible causes, safe preliminary checks, stop-work conditions, the recommended next action, and the additional information needed.",
+  "response": "**Possible Causes:**  \n- Air pressure in the system is too low.  \n- Air filter or regulator is clogged or malfunctioning.  \n- Air leak in the system or in the cylinder.  \n- Faulty or damaged cylinder piston or seal.  \n- Incorrect or damaged cylinder mounting or alignment.  \n- Faulty or damaged cylinder valve or actuator.  \n\n**Safe Preliminary Checks:**  \n- Check for visible leaks in the pneumatic system or cylinder.  \n- Measure and verify the air pressure in the system using a pressure gauge.  \n- Inspect the air filter and regulator for clogs or damage.  \n- Check the cylinder for physical damage, such as dents, cracks, or leaks.  \n- Ensure the cylinder is properly mounted and aligned.  \n\n**Stop-Work Conditions:**  \n- If the cylinder is leaking air or showing signs of damage.  \n- If the air pressure is significantly lower than the system’s required level.  \n- If the system is not properly isolated or locked out before inspection.  \n\n**Recommended Next Action:**  \n- Isolate the pneumatic system and ensure all energy sources are disconnected.  \n- Check and clean or replace the air filter and regulator if clogged.  \n- Inspect the cylinder for damage and test for leaks.  \n- If the cylinder is damaged or the issue persists, consult the equipment manual or a qualified maintenance technician.  \n\n**Additional Information Needed:**  \n- The system’s required air pressure level.  \n- The make and model of the pneumatic cylinder.  \n- Any recent changes or maintenance performed on the system.  \n- The type and condition of the air filter and regulator.  \n\n**Limitations:**  \n- This response is general and does not replace the equipment manual or approved workplace procedures.  \n- Specific diagnostic steps may vary depending on the system’s design and manufacturer specifications.",
+  "status": "success",
+  "started_at": "2026-07-17T10:02:11.653063+00:00",
+  "completed_at": "2026-07-17T10:03:05.680717+00:00",
+  "duration_seconds": 54.028,
+  "usage": {
+    "completion_tokens": 378,
+    "prompt_tokens": 641,
+    "total_tokens": 1019,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

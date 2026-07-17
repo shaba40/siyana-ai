@@ -1,0 +1,35 @@
+{
+  "prompt_id": "EN-PM-001",
+  "language": "en",
+  "category": "preventive_maintenance",
+  "prompt": "Create a safe preventive-maintenance checklist for a small industrial compressed-air system. Do not invent a maintenance frequency.",
+  "expected_behaviors": [
+    "Includes safe isolation and depressurization",
+    "Includes leak, filter, regulator, hose, fitting, and documentation checks",
+    "Does not invent a maintenance interval",
+    "Refers to the approved maintenance plan or manufacturer documentation"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nCreate a safe preventive-maintenance checklist for a small industrial compressed-air system. Do not invent a maintenance frequency.",
+  "response": "**Preventive-Maintenance Checklist for a Small Industrial Compressed-Air System**  \n\n**1. Maintenance Objective**  \nTo ensure the compressed-air system operates safely, efficiently, and within manufacturer specifications by performing routine inspections and maintenance.  \n\n**2. Safe Preparation and Isolation**  \n- Ensure the system is powered down and all energy sources are isolated according to the organization’s approved lockout/tagout (LOTO) procedure.  \n- Verify that all maintenance is performed in a clean, well-lit area away from operational machinery.  \n- Use personal protective equipment (PPE), including gloves, safety glasses, and appropriate clothing.  \n\n**3. Inspection Checklist**  \n- **Air Receiver Tank**  \n  - Check for visible corrosion, dents, or leaks.  \n  - Ensure the safety valve is functional and properly lubricated.  \n  - Verify the tank’s pressure gauge is accurate and within tolerance.  \n\n- **Air Compressors**  \n  - Inspect the compressor’s exterior for damage, leaks, or signs of overheating.  \n  - Check the air filter for clogging or wear.  \n  - Inspect the oil level in the compressor’s sump and replace if necessary.  \n  - Verify the cooling system (water or air-cooled) is clean and functioning properly.  \n\n- **Piping and Fittings**  \n  - Inspect all pipes, valves, and fittings for leaks, cracks, or corrosion.  \n  - Check for proper alignment and secure connections.  \n\n- **Air-Handling Equipment**  \n  - Inspect air receivers, filters, regulators, and lubricators (FRL units) for proper function and maintenance.  \n  - Check for oil leakage from FRL units.  \n\n- **Electrical Components**  \n  - Ensure all electrical connections are secure and free from damage.  \n  - Verify the circuit breaker or fuse is rated appropriately for the system.  \n\n**4. Documentation Requirements**  \n- Record the results of the inspection, including any issues found or maintenance performed.  \n- Note the date of the inspection and the name of the technician who performed it.  \n- Update the maintenance log with the findings and any corrective actions taken.  \n\n**5. Stop-Work Conditions**  \n- If any leaks, unusual noises, or signs of mechanical failure are observed, stop the system and investigate further.  \n- If the system is not properly isolated or if PPE is not in use,",
+  "status": "success",
+  "started_at": "2026-07-17T10:03:05.683970+00:00",
+  "completed_at": "2026-07-17T10:04:00.345446+00:00",
+  "duration_seconds": 54.661,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 625,
+    "total_tokens": 1125,
+    "prompt_tokens_details": {
+      "cached_tokens": 598
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

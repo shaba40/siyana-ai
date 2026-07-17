@@ -1,0 +1,35 @@
+{
+  "prompt_id": "FR-TR-001",
+  "language": "fr",
+  "category": "troubleshooting",
+  "prompt": "Le moteur électrique d'une machine industrielle chauffe après dix minutes de fonctionnement. Présentez les causes possibles, les vérifications préliminaires sûres, les conditions d'arrêt, la prochaine action et les informations supplémentaires nécessaires.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Exige l'arrêt de la machine et l'isolement des sources d'énergie avant inspection",
+    "Mentionne des causes possibles sans affirmer un diagnostic certain",
+    "Ne recommande pas de travailler sous tension"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nLe moteur électrique d'une machine industrielle chauffe après dix minutes de fonctionnement. Présentez les causes possibles, les vérifications préliminaires sûres, les conditions d'arrêt, la prochaine action et les informations supplémentaires nécessaires.",
+  "response": "**Symptôme observé** : Le moteur électrique d'une machine industrielle chauffe après dix minutes de fonctionnement.\n\n**Causes possibles** :  \n- Surcharge électrique ou surcharge mécanique du moteur.  \n- Problèmes de démarrage ou de fonctionnement du moteur (ex. : démarrage à vide, dérèglement du variateur de vitesse).  \n- Perte de refroidissement (ex. : défaillance du ventilateur du moteur).  \n- Défauts de bobinage (ex. : court-circuit, dégradations des enroulements).  \n- Problèmes de connexion électrique (ex. : contacts défectueux, câblage défectueux).  \n- Défauts de la machine (ex. : surcharge mécanique, frottement excessif).  \n- Problèmes de commande (ex. : dérèglement du contrôleur de sécurité ou du PLC).  \n\n**Vérifications préliminaires sûres** :  \n- Arrêter la machine et isoler toutes les sources d'énergie (procedure de verrouillage/étiquetage).  \n- Vérifier la température ambiante et l'air circulant autour du moteur.  \n- Contrôler les connexions électriques (fiches, borniers, câbles) pour détecter des défauts ou des usages.  \n- Vérifier l'état du ventilateur du moteur (fonctionnement, absence de poussière, défaillance).  \n- Exécuter un test de résistance du bobinage du moteur (si outil disponible).  \n- Vérifier les paramètres de fonctionnement du moteur (vitesse, courant, tension) par rapport aux spécifications du fabricant.  \n\n**Conditions d'arrêt** :  \n- Si la température du moteur dépasse les limites de sécurité définies par le fabricant ou les procédures de l'entreprise.  \n- Si des signes de défaillance sont observés (ex. : bruit anormal, odeur brûlée, fumée).  \n- Si des défauts de commande ou de sécurité sont détectés.  \n\n**Prochaine action**",
+  "status": "success",
+  "started_at": "2026-07-17T10:05:19.616063+00:00",
+  "completed_at": "2026-07-17T10:06:16.990148+00:00",
+  "duration_seconds": 57.374,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 664,
+    "total_tokens": 1164,
+    "prompt_tokens_details": {
+      "cached_tokens": 593
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}
