@@ -79,3 +79,27 @@
 - [ ] Shortlist
 - [ ] Retest with revised settings
 - [ ] Reject
+## Candidate decision
+
+- [ ] Shortlist
+- [ ] Retest with revised settings
+- [ ] Reject
+## Candidate decision
+
+- [ ] Shortlist
+- [ ] Retest with revised settings
+- [ ] Reject
+## Candidate decision
+
+- [x] Selected as the Gate 1 model
+- [ ] Retest with revised settings
+- [ ] Reject
+
+Qwen3-4B Q4_K_M was selected because it ran successfully in the local
+environment, produced usable multilingual responses, supported offline
+inference, followed the industrial-maintenance response structure, and uses
+the permissive Apache 2.0 license.
+
+A broader candidate comparison was deferred to prioritize structured domain
+evaluation, safety testing, optimization, documentation, and prototype
+development before the Gate 1 deadline.
