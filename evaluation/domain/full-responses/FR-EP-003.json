@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-EP-003",
+  "language": "fr",
+  "category": "enterprise_productivity",
+  "prompt": "Une petite usine souhaite réduire les pannes répétitives. Proposez une méthode utilisable hors ligne pour enregistrer les défaillances et identifier les tendances récurrentes.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Recommande des enregistrements locaux cohérents avec des champs structurés",
+    "Inclut l'équipement, le symptôme, la date, les conditions, la cause, l'action, le temps d'arrêt et la vérification",
+    "Distingue les causes supposées des causes racines confirmées",
+    "Ne prétend pas qu'une simple corrélation prouve automatiquement la cause"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nUne petite usine souhaite réduire les pannes répétitives. Proposez une méthode utilisable hors ligne pour enregistrer les défaillances et identifier les tendances récurrentes.",
+  "response": "**Méthode pour enregistrer les défaillances et identifier les tendances récurrentes (hors ligne)**\n\n**1. Maintenance objective**  \nIdentifier les causes répétées de pannes pour améliorer la fiabilité et réduire les temps d'arrêt.\n\n**2. Safe preparation and isolation**  \n- Assurez-vous que la machine est arrêtée et que toutes les sources d'énergie sont isolées avant toute inspection.\n- Utilisez les procédures de verrouillage/étiquetage approuvées de l'entreprise.\n\n**3. Inspection checklist**  \n- Enregistrez les défaillances lors de chaque maintenance ou inspection.\n- Documentez les symptômes observés (ex. : bruit anormal, défaillance électrique, perte de pression).\n- Notez les dates, les heures, les opérateurs impliqués et les conditions environnementales (température, humidité).\n\n**4. Documentation requirements**  \n- Utilisez un tableau ou un logiciel de suivi (hors ligne) pour suivre les défaillances.\n- Exemples de champs à inclure :\n  - Date et heure de la défaillance\n  - Type de défaillance (ex. : panne électrique, défaillance hydraulique)\n  - Composant concerné\n  - Réparation effectuée\n  - Cause suspecte (si connue)\n  - Prochaine date de vérification\n\n**5. Stop-work conditions**  \n- Arrêtez la machine avant toute inspection ou enregistrement.\n- Ne travaillez pas sur des systèmes sous tension ou sous pression.\n\n**6. Recommended frequency or source**  \n- Mise à jour hebdominaire ou mensuelle du tableau de défaillances.\n- Consultez le manuel de maintenance de l'entreprise pour des recommandations spécifiques.\n\n**7. Limitations**  \n- Cette méthode est une aide préliminaire. Une analyse approfondie nécessite des données précises et des专业知识 d'un technicien qualifié.\n- Ne remplace pas les procédures de maintenance approuvées ou les manuels d'installation.\n\n**Safety note** : Cette guidance est préliminaire et ne remplace pas le manuel d'équipement, les",
+  "status": "success",
+  "started_at": "2026-07-17T14:00:27.952815+00:00",
+  "completed_at": "2026-07-17T14:01:26.881070+00:00",
+  "duration_seconds": 58.928,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 650,
+    "total_tokens": 1150,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

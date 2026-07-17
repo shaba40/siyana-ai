@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-PM-005",
+  "language": "fr",
+  "category": "preventive_maintenance",
+  "prompt": "Créez une liste de maintenance préventive pour les dispositifs de sécurité d'une machine industrielle, notamment les protecteurs, les interverrouillages, les arrêts d'urgence et les voyants d'avertissement.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Indique que les essais doivent suivre les procédures autorisées et la documentation du fabricant",
+    "Ne recommande jamais de neutraliser ou de désactiver un dispositif de protection",
+    "Inclut l'état physique, le fonctionnement, l'étiquetage, la documentation et l'escalade",
+    "Exige que la machine reste hors service lorsqu'une fonction de sécurité est défectueuse"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nCréez une liste de maintenance préventive pour les dispositifs de sécurité d'une machine industrielle, notamment les protecteurs, les interverrouillages, les arrêts d'urgence et les voyants d'avertissement.",
+  "response": "**Liste de maintenance préventive pour les dispositifs de sécurité d'une machine industrielle**\n\n**1. Objectif de la maintenance**  \nAssurer la fonctionnalité, la fiabilité et la sécurité des dispositifs de sécurité (protecteurs, interverrouillages, arrêts d'urgence, voyants d'avertissement) pour prévenir les pannes, les accidents et les non-conformités.\n\n**2. Préparation et isolation sécuritaire**  \n- Arrêter la machine et isoler toutes les sources d'énergie (électrique, hydraulique, pneumatique) conformément aux procédures de verrouillage/étiquetage (LOTO).  \n- Vérifier l'accès aux dispositifs de sécurité (ne pas travailler sous tension ou sous pression).  \n- Utiliser des équipements de protection individuelle (EPI) adaptés (gants, lunettes de protection, chaussures de sécurité, etc.).\n\n**3. Liste d'inspection**  \n- **Protecteurs** :  \n  - Vérifier l'intégrité physique (absence de fissures, déformations, usages).  \n  - Confirmer la position correcte et l'efficacité du dispositif.  \n  - Vérifier l'absence de poussière, de saleté ou de débris.  \n\n- **Interverrouillages** :  \n  - Vérifier la fonctionnalité du mécanisme (ouverture, fermeture, verrouillage).  \n  - Confirmer l'absence de pannes ou de défaillances.  \n  - Vérifier l'absence de dégâts ou de détérioration.  \n\n- **Arrêts d'urgence** :  \n  - Tester la réaction du dispositif lors d'un arrêt d'urgence (presseur, manette, bouton).  \n  - Vérifier l'absence de blocages ou de défaillances.  \n  - Confirmer que le dispositif s'active correctement.  \n\n- **Voyants d'avertissement** :  \n  - Vérifier l'illumination et la clarté des indicateurs.  \n  - Confirmer l'absence de défaillances ou de dégrad",
+  "status": "success",
+  "started_at": "2026-07-17T13:57:32.612557+00:00",
+  "completed_at": "2026-07-17T13:58:30.727117+00:00",
+  "duration_seconds": 58.114,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 656,
+    "total_tokens": 1156,
+    "prompt_tokens_details": {
+      "cached_tokens": 607
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

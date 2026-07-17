@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-EP-003",
+  "language": "en",
+  "category": "enterprise_productivity",
+  "prompt": "A small factory wants to reduce repeated equipment faults. Propose an offline-friendly method for recording failures and identifying recurring patterns.",
+  "expected_behaviors": [
+    "Recommends consistent local records using structured fields",
+    "Includes asset, symptom, date, operating condition, cause, action, downtime, and verification data",
+    "Distinguishes suspected causes from confirmed root causes",
+    "Suggests periodic review of recurring patterns",
+    "Does not claim that correlation automatically proves causation"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nA small factory wants to reduce repeated equipment faults. Propose an offline-friendly method for recording failures and identifying recurring patterns.",
+  "response": "**Maintenance objective:** Identify recurring equipment faults to reduce repeated failures.  \n\n**Safe preparation and isolation:** Ensure the equipment is powered down and all energy sources are isolated before inspection.  \n\n**Inspection checklist:**  \n- Review maintenance logs and repair records for each equipment failure.  \n- Note the time, equipment, and type of failure.  \n- Record any environmental factors (temperature, humidity, workload).  \n- Document any changes in operation or maintenance history.  \n\n**Documentation requirements:** Use a standardized form or digital tool to log each failure, including:  \n- Date and time of failure.  \n- Equipment model and serial number.  \n- Description of the fault (e.g., \"motor overheating,\" \"leakage\").  \n- Any corrective actions taken.  \n- Operator or technician notes.  \n\n**Stop-work conditions:** If the equipment is unsafe or the fault is critical, stop production and isolate the machine according to OSHA or company procedures.  \n\n**Recommended frequency or source:** Update the log after each maintenance activity. For patterns, review the log weekly or monthly. Consult the equipment manual for specific guidance.  \n\n**Limitations:** This method relies on accurate and consistent logging. Without detailed records, identifying patterns may be challenging.  \n\nSafety note: This guidance is preliminary and does not replace the equipment manual, approved workplace procedures, or a qualified maintenance professional.",
+  "status": "success",
+  "started_at": "2026-07-17T13:43:38.969280+00:00",
+  "completed_at": "2026-07-17T13:44:11.280411+00:00",
+  "duration_seconds": 32.311,
+  "usage": {
+    "completion_tokens": 279,
+    "prompt_tokens": 627,
+    "total_tokens": 906,
+    "prompt_tokens_details": {
+      "cached_tokens": 598
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

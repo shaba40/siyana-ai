@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-TR-002",
+  "language": "fr",
+  "category": "troubleshooting",
+  "prompt": "Un vérin pneumatique d'une machine de production se déplace lentement dans les deux sens. Donnez une méthode préliminaire de diagnostic sûre et structurée.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Exige l'arrêt de la machine et l'isolement de toutes les énergies avant inspection",
+    "Mentionne des causes possibles liées à la pression, aux fuites, aux restrictions, au distributeur, au filtre ou au vérin",
+    "Ne conseille pas d'augmenter la pression au-delà des limites du fabricant",
+    "Demande la pression mesurée, le modèle de l'équipement, la charge et l'historique du problème"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nUn vérin pneumatique d'une machine de production se déplace lentement dans les deux sens. Donnez une méthode préliminaire de diagnostic sûre et structurée.",
+  "response": "**Symptôme observé** : Un vérin pneumatique d'une machine de production se déplace lentement dans les deux sens.\n\n**Possibles causes** :  \n- Pression d'air insuffisante dans le système.  \n- Fuites dans le système pneumatique.  \n- Problèmes avec le vérin lui-même (ex. : joints usés, piètement endommagé).  \n- Problèmes avec le commande ou le régulateur de pression.  \n- Problèmes avec le système de contrôle (ex. : défaillance du PLC ou du contrôleur de vérin).  \n\n**Vérifications préliminaires sûres** :  \n1. Vérifier que le système pneumatique est correctement isolé et que l'énergie est déconnectée avant toute inspection.  \n2. Mesurer la pression d'air dans le système pour s'assurer qu'elle est dans la plage normale (selon les spécifications du fabricant).  \n3. Vérifier les joints et les connexions du vérin pour détecter les fuites.  \n4. Tester le vérin avec une source d'air indépendante pour vérifier son fonctionnement.  \n5. Vérifier l'état du régulateur de pression et du système de commande.  \n\n**Conditions d'arrêt du travail** :  \n- Si la pression d'air est en dehors des limites spécifiées.  \n- Si des fuites sont détectées.  \n- Si le vérin ne répond pas à un test de fonctionnement indépendant.  \n\n**Action recommandée** :  \n- Arrêter la machine et isoler l'énergie avant toute inspection.  \n- Mesurer la pression d'air et vérifier les fuites.  \n- Tester le vérin avec une source d'air indépendante.  \n- Vérifier le régulateur de pression et le système de commande.  \n- Si le problème persiste, consulter le manuel du fabricant et un professionnel qualifié.  \n\n**Information complémentaire requise** :  \n- Les spécifications de pression d'air du système.  \n- Les valeurs normales de débit du vérin.  \n- Le type de vérin et ses composants (ex",
+  "status": "success",
+  "started_at": "2026-07-17T13:49:41.539998+00:00",
+  "completed_at": "2026-07-17T13:50:39.529503+00:00",
+  "duration_seconds": 57.989,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 643,
+    "total_tokens": 1143,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-PM-003",
+  "language": "en",
+  "category": "preventive_maintenance",
+  "prompt": "Develop a general preventive-maintenance checklist for a belt conveyor used in a small factory. Keep the checklist suitable for offline use by a maintenance team.",
+  "expected_behaviors": [
+    "Requires stopping and isolating the conveyor before guarded-area inspection",
+    "Includes belt condition, alignment, tension, rollers, bearings, guards, fasteners, cleaning, and records",
+    "Does not advise adjustment while the conveyor is moving",
+    "Does not invent equipment-specific tolerances or intervals",
+    "Refers to the approved maintenance plan and manufacturer documentation"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nDevelop a general preventive-maintenance checklist for a belt conveyor used in a small factory. Keep the checklist suitable for offline use by a maintenance team.",
+  "response": "**Preventive Maintenance Checklist for Belt Conveyor (Offline Use)**\n\n**1. Maintenance Objective**  \nTo ensure the belt conveyor operates safely and efficiently, reducing downtime and equipment failure.\n\n**2. Safe Preparation and Isolation**  \n- Confirm the conveyor is powered down and all energy sources are isolated.  \n- Follow the organization’s approved lockout/tagout (LOTO) procedure.  \n- Ensure all guards, safety interlocks, and emergency stops are in place.  \n\n**3. Inspection Checklist**  \n- **Belt:**  \n  - Check for wear, tears, or fraying.  \n  - Ensure the belt is properly aligned and tensioned.  \n  - Look for signs of misalignment or slippage.  \n- **Rollers:**  \n  - Inspect for damage, wear, or deformation.  \n  - Check for proper lubrication and cleanliness.  \n- **Idlers:**  \n  - Ensure idlers are in good condition and not damaged.  \n  - Check for proper alignment and lubrication.  \n- **Drive Unit:**  \n  - Inspect the drive motor and gear unit for signs of wear or overheating.  \n  - Check belt tension and alignment.  \n- **Sensors and Safety Devices:**  \n  - Verify that safety sensors, emergency stops, and interlocks are functional.  \n- **Belt Path and Surrounding Area:**  \n  - Check for debris, obstructions, or damage to the conveyor path.  \n  - Ensure the area is clean and free of hazards.  \n- **Belting and Pulleys:**  \n  - Check for proper alignment and secure mounting.  \n  - Ensure pulleys are not damaged or worn.  \n\n**4. Documentation Requirements**  \n- Record the date of inspection and any issues found.  \n- Note any repairs, replacements, or adjustments made.  \n- Update the maintenance log with findings and actions taken.  \n\n**5. Stop-Work Conditions**  \n- If any of the following are observed, stop the conveyor and investigate:  \n  - Severe wear or damage to the belt, rollers, or idlers.  \n  - Unusual noise, vibration, or overheating.  \n  - Safety sensors or interlocks not functioning properly.  \n  - Obvious misalignment or slippage.  \n\n**6. Recommended Frequency or Source**  \n- Perform this inspection every 6 months or as per the manufacturer’s recommended schedule.  \n- Consult the",
+  "status": "success",
+  "started_at": "2026-07-17T13:39:18.411722+00:00",
+  "completed_at": "2026-07-17T13:40:16.087306+00:00",
+  "duration_seconds": 57.676,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 632,
+    "total_tokens": 1132,
+    "prompt_tokens_details": {
+      "cached_tokens": 598
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

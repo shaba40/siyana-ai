@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-PM-001",
+  "language": "en",
+  "category": "preventive_maintenance",
+  "prompt": "Create a safe preventive-maintenance checklist for a small industrial compressed-air system. Do not invent a maintenance frequency.",
+  "expected_behaviors": [
+    "Includes safe isolation and depressurization",
+    "Includes leak, filter, regulator, hose, fitting, drain, and documentation checks",
+    "Does not invent a maintenance interval",
+    "Refers to the approved maintenance plan or manufacturer documentation",
+    "Includes stop-work conditions for damaged or unsafe components"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nCreate a safe preventive-maintenance checklist for a small industrial compressed-air system. Do not invent a maintenance frequency.",
+  "response": "**Preventive-Maintenance Checklist for a Small Industrial Compressed-Air System**  \n\n**1. Maintenance Objective**  \nTo ensure the compressed-air system operates safely, efficiently, and reliably by identifying and addressing potential issues before they cause downtime or safety hazards.  \n\n**2. Safe Preparation and Isolation**  \n- Ensure the compressed-air system is isolated from all energy sources (e.g., shut off valves, disconnect power if applicable).  \n- Follow the organization’s approved lockout/tagout (LOTO) procedure to prevent accidental startup.  \n- Confirm that all personnel involved are trained in safety procedures and equipment handling.  \n\n**3. Inspection Checklist**  \n- **Air Receiver Tank:**  \n  - Check for visible damage, rust, or corrosion.  \n  - Inspect pressure gauge and safety valve for proper function and calibration.  \n  - Ensure the tank is properly grounded.  \n- **Air Compressors:**  \n  - Inspect for leaks, oil leaks, or abnormal vibrations.  \n  - Check oil level and condition in the compressor.  \n  - Verify that the air filter is clean or replaceable.  \n  - Inspect the motor and electrical connections for wear or damage.  \n- **Piping and Fittings:**  \n  - Look for cracks, leaks, or loose connections.  \n  - Check for proper alignment and secure fastenings.  \n- **Valves and Actuators:**  \n  - Test for proper operation and no sticking or leakage.  \n- **Air-Filtered Components:**  \n  - Check that filters are clean or replaceable.  \n  - Ensure proper installation and alignment.  \n- **Safety Devices:**  \n  - Verify that safety valves, pressure relief valves, and emergency stop mechanisms are functional.  \n\n**4. Documentation Requirements**  \n- Record the results of the inspection, including any issues found.  \n- Note the date of the inspection and the names of personnel involved.  \n- Update maintenance logs or records according to the organization’s procedures.  \n\n**5. Stop-Work Conditions**  \n- If any unsafe condition is detected (e.g., leaks, damaged components, or malfunctioning safety devices), the system must be stopped immediately.  \n- Do not proceed with maintenance until the issue is resolved and the system is re-verified for safety.  \n\n**6. Recommended Frequency or Source**  \n- Follow the manufacturer’s guidelines for maintenance schedules.  \n- If no specific frequency is provided, consult the",
+  "status": "success",
+  "started_at": "2026-07-17T13:37:20.521663+00:00",
+  "completed_at": "2026-07-17T13:38:20.023528+00:00",
+  "duration_seconds": 59.502,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 625,
+    "total_tokens": 1125,
+    "prompt_tokens_details": {
+      "cached_tokens": 598
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

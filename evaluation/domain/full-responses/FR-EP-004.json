@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-EP-004",
+  "language": "fr",
+  "category": "enterprise_productivity",
+  "prompt": "Créez un format court de rapport quotidien sur l'état d'une machine, destiné à des opérateurs qui ne sont pas des spécialistes de la maintenance.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Utilise des observations simples sans demander un diagnostic technique aux opérateurs",
+    "Inclut les bruits, les vibrations, la température indiquée, les fuites, les alarmes, les protecteurs, la propreté et l'état de fonctionnement",
+    "Interdit l'ouverture des protecteurs et les réparations non autorisées",
+    "Sépare les observations de l'opérateur des conclusions du service de maintenance"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nCréez un format court de rapport quotidien sur l'état d'une machine, destiné à des opérateurs qui ne sont pas des spécialistes de la maintenance.",
+  "response": "**Rapport quotidien sur l'état de la machine**\n\n**Date :** [Date actuelle]  \n**Machine :** [Nom/numéro de la machine]  \n**Opérateur :** [Nom de l'opérateur]\n\n**État général :**  \n- [Fonctionne normalement / légèrement défectueux / nécessite inspection]\n\n**Signes observés :**  \n- [Aucun signe anormal / bruit anormal / vibration anormale / défaillance / autre]\n\n**Actions recommandées :**  \n- [Aucune action nécessaire / vérification supplémentaire / maintenance préventive / contact avec un technicien]\n\n**Remarques :**  \n- [Ajouter toute autre information utile, comme des conditions météorologiques ou des changements de production]\n\n**Signature :** [Nom de l'opérateur]\n\n**Note de sécurité :** Ce rapport est un guide préliminaire. Pour toute situation d'urgence ou défaillance, consultez immédiatement les procédures de sécurité et contactez un technicien qualifié.",
+  "status": "success",
+  "started_at": "2026-07-17T14:01:26.883440+00:00",
+  "completed_at": "2026-07-17T14:01:55.170311+00:00",
+  "duration_seconds": 28.287,
+  "usage": {
+    "completion_tokens": 248,
+    "prompt_tokens": 643,
+    "total_tokens": 891,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

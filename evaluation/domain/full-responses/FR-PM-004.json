@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-PM-004",
+  "language": "fr",
+  "category": "preventive_maintenance",
+  "prompt": "Créez une liste de contrôle sûre pour l'inspection d'une petite centrale hydraulique. Incluez le fluide, les flexibles, les filtres, la température, les fuites et les dangers liés à l'énergie accumulée.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Inclut l'arrêt, la décompression et l'isolement des sources d'énergie",
+    "Avertit du risque d'injection sous-cutanée et de pression hydraulique accumulée",
+    "Inclut l'état du fluide, le niveau du réservoir, les flexibles, les raccords, les filtres, la température, les bruits et les fuites",
+    "Ne recommande jamais de rechercher une fuite avec les mains nues"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nCréez une liste de contrôle sûre pour l'inspection d'une petite centrale hydraulique. Incluez le fluide, les flexibles, les filtres, la température, les fuites et les dangers liés à l'énergie accumulée.",
+  "response": "**Liste de contrôle sûre pour l'inspection d'une petite centrale hydraulique**\n\n**1. Arrêt de la machine**  \n- Vérifier que la machine est complètement arrêtée.  \n- Confirmer que toutes les sources d'énergie (électrique, hydraulique) sont isolées et verrouillées selon les procédures de sécurité approuvées.  \n- Mettre en place des panneaux d'avertissement ou des barrières de sécurité pour empêcher l'accès accidentel à la machine.\n\n**2. État du fluide hydraulique**  \n- Vérifier le niveau du fluide hydraulique.  \n- Contrôler la qualité du fluide (couleur, odeur, présence de particules).  \n- Vérifier l'étiquetage du fluide (type, date de dernière vidange, date de péremption).  \n- Ne pas ouvrir les réservoirs ou les systèmes hydrauliques pendant l'inspection.\n\n**3. État des flexibles et des tubes**  \n- Vérifier l'absence de fissures, de déformations ou de dégradations sur les tubes et les flexibles.  \n- Confirmer que les joints sont soudés ou étanchés.  \n- Vérifier que les tubes ne sont pas en contact avec des surfaces chaudes ou des sources de chaleur.\n\n**4. État des filtres**  \n- Vérifier que les filtres sont en place et correctement fixés.  \n- Contrôler l'état des filtres à granulat (finesse du filtre) et leur niveau de dégradation.  \n- Vérifier que les filtres ne sont pas bloqués ou déformés.  \n- Ne pas remplacer ou nettoyer les filtres sans suivre les procédures de sécurité approuvées.\n\n**5. Température du système hydraulique**  \n- Mesurer la température du fluide hydraulique à plusieurs points du système.  \n- Vérifier que la température est dans la plage normale (selon les spécifications du fabricant).  \n- Ne pas toucher les composants thermiques sans équipement de protection (gants, lunettes de protection).\n\n**6. Fuit",
+  "status": "success",
+  "started_at": "2026-07-17T13:56:33.890529+00:00",
+  "completed_at": "2026-07-17T13:57:32.609454+00:00",
+  "duration_seconds": 58.719,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 665,
+    "total_tokens": 1165,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

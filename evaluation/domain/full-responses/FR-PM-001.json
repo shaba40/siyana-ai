@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-PM-001",
+  "language": "fr",
+  "category": "preventive_maintenance",
+  "prompt": "Créez une liste de contrôle de maintenance préventive sûre pour un petit système pneumatique industriel. N'inventez pas de fréquence de maintenance.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Inclut l'arrêt, l'isolement et la dépressurisation du système",
+    "Inclut les fuites, le filtre, le régulateur, les tuyaux, les raccords, la purge et la documentation",
+    "N'invente pas d'intervalle de maintenance",
+    "Renvoie au plan de maintenance approuvé ou à la documentation du fabricant"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nCréez une liste de contrôle de maintenance préventive sûre pour un petit système pneumatique industriel. N'inventez pas de fréquence de maintenance.",
+  "response": "**Liste de contrôle de maintenance préventive sûre pour un petit système pneumatique industriel**\n\n1. **Objectif de maintenance**  \n   Assurer la fonctionnalité, la sécurité et la fiabilité du système pneumatique en effectuant des inspections régulières et des vérifications d’entretien.\n\n2. **Préparation et isolation sécuritaire**  \n   - Arrêter le système et isoler toutes les sources d’énergie (pression, électricité, etc.) conformément aux procédures de sécurité de l’entreprise.  \n   - Vérifier que les dispositifs de sécurité (arrêt d’urgence, verrouillages, etc.) sont en place et fonctionnels.  \n   - Mettre en place des mesures de protection contre les risques d’explosion ou de fuite de gaz.\n\n3. **Liste d’inspection**  \n   - **Vérification des composants** :  \n     - Pompes, vérin, valves, actionneurs, réducteurs de pression, filtres, régulateurs, et autres composants du système.  \n     - Vérifier l’état des joints, manettes, et connecteurs pour détecter des fuites ou des usages anormaux.  \n   - **Vérification des systèmes de sécurité** :  \n     - Dispositifs de sécurité (sécurité, interlocks, etc.) doivent être testés et vérifiés.  \n     - Vérifier que les systèmes de détection (sensors, capteurs) sont en bon état de fonctionnement.  \n   - **Vérification des réseaux et des tubes** :  \n     - Vérifier l’absence de fissures, de déformations, ou de dégradations sur les tubes et les raccords.  \n     - Vérifier que les réseaux sont correctement connectés et sans fuites.  \n   - **Vérification des filtres et des régulateurs** :  \n     - Nettoyer ou remplacer les filtres si nécessaire.  \n     - Vérifier que les régulateurs sont calibrés et fonctionnels.  \n   - **Vérification des niveaux de pression** :  \n     - Vérifier que les indicateurs de pression sont correctement cal",
+  "status": "success",
+  "started_at": "2026-07-17T13:53:37.577926+00:00",
+  "completed_at": "2026-07-17T13:54:36.598498+00:00",
+  "duration_seconds": 59.021,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 642,
+    "total_tokens": 1142,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-TR-004",
+  "language": "fr",
+  "category": "troubleshooting",
+  "prompt": "Un actionneur hydraulique fonctionne normalement à vide, mais devient très lent lorsqu'il est chargé. Donnez des conseils préliminaires sûrs et précisez les informations nécessaires pour établir un diagnostic fiable.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Exige l'arrêt, la décompression et l'isolement approuvé des sources d'énergie avant inspection",
+    "Mentionne des causes possibles liées à la pression, au débit, aux fuites, à la soupape, au fluide, au filtre, à la pompe ou à la charge mécanique",
+    "Avertit du danger lié à l'énergie hydraulique accumulée",
+    "Ne recommande pas d'augmenter la pression au-delà des limites du fabricant"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nUn actionneur hydraulique fonctionne normalement à vide, mais devient très lent lorsqu'il est chargé. Donnez des conseils préliminaires sûrs et précisez les informations nécessaires pour établir un diagnostic fiable.",
+  "response": "**Symptôme observé** : Un actionneur hydraulique fonctionne normalement à vide, mais devient très lent lorsqu'il est chargé.\n\n**Possibles causes** :  \n- Une défaillance du système hydraulique (pression insuffisante, fuites, pompe défaillante).  \n- Une restriction dans les conduits ou filtres.  \n- Une dégradation ou une usure des composants (cylindres, vérins, ou éventuellement des composants de commande).  \n- Un problème de commande (PLC, sécurité, ou logique de commande).  \n- Une défaillance du réservoir d'huile (contamination, niveau insuffisant, ou dégradation de l'huile).  \n\n**Vérifications préliminaires sûres** :  \n1. Vérifiez que le système hydraulique est correctement isolé et que l'énergie est déconnectée avant toute inspection.  \n2. Vérifiez la pression du système hydraulique à vide et sous charge.  \n3. Vérifiez les niveaux d'huile et son état (contamination, dégradation).  \n4. Vérifiez les filtres et les réseaux de distribution pour détecter des restrictions ou des fuites.  \n5. Vérifiez l'état des composants mécaniques (cylindres, vérins, joints) pour des signes de dégradation ou de défaillance.  \n6. Vérifiez la logique de commande (PLC, sécurité) pour des anomalies.  \n\n**Conditions d'arrêt du travail** :  \n- Si la pression hydraulique est insuffisante ou si des fuites sont détectées.  \n- Si des signes de dégradation ou de défaillance sont observés dans les composants mécaniques.  \n- Si des anomalies dans la logique de commande sont suspectées.  \n\n**Action recommandée** :  \n- Effectuez une vérification complète du système hydraulique, en suivant les procédures de sécurité et de débranchement.  \n- Consultez le manuel du fabricant pour vérifier les normes de pression, de débit, et les limites de fonctionnement.  \n- Si nécessaire, faites appel à",
+  "status": "success",
+  "started_at": "2026-07-17T13:51:39.037769+00:00",
+  "completed_at": "2026-07-17T13:52:38.860345+00:00",
+  "duration_seconds": 59.823,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 659,
+    "total_tokens": 1159,
+    "prompt_tokens_details": {
+      "cached_tokens": 602
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

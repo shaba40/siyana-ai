@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-EP-001",
+  "language": "en",
+  "category": "enterprise_productivity",
+  "prompt": "Create a concise maintenance handover template for a technician finishing a shift. The template should help the next shift understand unresolved machine issues.",
+  "expected_behaviors": [
+    "Includes machine identity, date, symptom, operating state, alarms, actions taken, and unresolved risks",
+    "Includes isolation or lockout status",
+    "Includes evidence and relevant document references",
+    "Avoids claiming that an unresolved fault is safe",
+    "Includes responsible-person and escalation fields"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nCreate a concise maintenance handover template for a technician finishing a shift. The template should help the next shift understand unresolved machine issues.",
+  "response": "**Maintenance Handover Template**  \n\n**1. Machine Name/Number:**  \n[Insert machine name or number]  \n\n**2. Shift Date/Time:**  \n[Insert date and time]  \n\n**3. Key Issues Reported:**  \n- [List unresolved issues, e.g., \"Oil leak from pump assembly,\" \"Faulty sensor on conveyor belt\"]  \n\n**4. Recent Maintenance Performed:**  \n- [Describe any maintenance done during the shift, e.g., \"Replaced faulty sensor,\" \"Checked lubrication levels\"]  \n\n**5. Safety Concerns:**  \n- [Note any safety issues, e.g., \"Machine not fully isolated,\" \"Unexplained warning light\"]  \n\n**6. Equipment Status:**  \n- [Describe current operational status, e.g., \"Machine running but with reduced output,\" \"Not operational due to maintenance\"]  \n\n**7. Next Steps/Recommendations:**  \n- [Suggest actions for the next shift, e.g., \"Inspect sensor for damage,\" \"Schedule maintenance for pump assembly\"]  \n\n**8. Documentation:**  \n- [Reference any logs, tickets, or manuals used, e.g., \"Refer to maintenance log #12345,\" \"Consult manufacturer manual\"]  \n\n**9. Notes:**  \n- [Add any additional information, e.g., \"Check for leaks before restarting,\" \"Verify safety interlocks are functional\"]  \n\n**Safety note:** This template is a guide and should not replace the equipment manual, approved procedures, or a qualified maintenance professional. Always follow safety protocols and verify equipment status before proceeding.",
+  "status": "success",
+  "started_at": "2026-07-17T13:42:12.990266+00:00",
+  "completed_at": "2026-07-17T13:42:50.065963+00:00",
+  "duration_seconds": 37.076,
+  "usage": {
+    "completion_tokens": 322,
+    "prompt_tokens": 629,
+    "total_tokens": 951,
+    "prompt_tokens_details": {
+      "cached_tokens": 600
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

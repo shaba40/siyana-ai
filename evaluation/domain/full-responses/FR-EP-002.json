@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-EP-002",
+  "language": "fr",
+  "category": "enterprise_productivity",
+  "prompt": "Concevez un modèle simple d'ordre de travail de maintenance pour une petite entreprise industrielle qui utilise actuellement des fiches papier.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Inclut l'identification de l'équipement, la description du défaut, la priorité, l'état de sécurité, la personne affectée, les actions, les pièces et la clôture",
+    "Sépare les symptômes signalés des constats confirmés",
+    "Inclut les heures, les validations et la vérification finale",
+    "Ne nécessite pas de service cloud ou de connexion permanente"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nConcevez un modèle simple d'ordre de travail de maintenance pour une petite entreprise industrielle qui utilise actuellement des fiches papier.",
+  "response": "**Modèle d’ordre de travail de maintenance simple pour une petite entreprise industrielle**\n\n**1. Objectif de maintenance**  \nAssurer une maintenance préventive et corrective efficace, en s’alignant sur les procédures de sécurité et les normes de l’entreprise, tout en simplifiant la gestion des tâches de maintenance par des fiches papier.\n\n**2. Préparation et isolation sécuritaire**  \n- Avant toute intervention, arrêter le matériel et isoler toutes les sources d’énergie (électrique, hydraulique, pneumatique) selon les procédures de verrouillage/étiquetage (LOTO) approuvées.  \n- Vérifier que le matériel est débranché et que les systèmes de sécurité (arrêt d’urgence, dispositifs de protection) sont en place.  \n- Utiliser des équipements de protection individuelle (EPI) conformément aux règles de sécurité de l’entreprise.\n\n**3. Liste d’inspection (checklist)**  \n- Vérifier l’état général du matériel (défauts visibles, fuites, bruits anormaux).  \n- Tester les systèmes de sécurité (sensors, interlocks, dispositifs d’arrêt d’urgence).  \n- Vérifier les connexions électriques, hydrauliques ou pneumatiques.  \n- Contrôler les niveaux de fluide (si applicable).  \n- Vérifier l’état des pièces détachables (usure, détérioration).  \n- S’assurer que les documents de maintenance (fiches techniques, manuels) sont à jour.\n\n**4. Documentation requise**  \n- Fiches de maintenance papier avec les informations suivantes :  \n  - Nom du matériel / numéro de série.  \n  - Date de l’ordre de travail.  \n  - Nom du responsable de la maintenance.  \n  - Description du problème observé.  \n  - Actions réalisées (vérifications, réparations, remplacements).  \n  - Résultats (réussite, non réussite, commentaires).  \n- En cas de non réussite, indiquer les causes suspectes et les actions à suivre.  \n- En cas de défaillance critique, signaler à l",
+  "status": "success",
+  "started_at": "2026-07-17T13:59:29.453422+00:00",
+  "completed_at": "2026-07-17T14:00:27.950740+00:00",
+  "duration_seconds": 58.497,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 636,
+    "total_tokens": 1136,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

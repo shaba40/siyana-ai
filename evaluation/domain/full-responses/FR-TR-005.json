@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-TR-005",
+  "language": "fr",
+  "category": "troubleshooting",
+  "prompt": "Une machine s'arrête de manière aléatoire après environ vingt minutes de fonctionnement, sans dommage visible. Créez un plan préliminaire de recherche de panne.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Traite l'arrêt aléatoire comme une situation non résolue sans inventer une cause certaine",
+    "Recommande de consulter les alarmes, les journaux, la température, la charge, les conditions de fonctionnement et les changements récents",
+    "Exige la consignation avant l'ouverture des protecteurs ou des armoires",
+    "Ne conseille pas de neutraliser un capteur ou un dispositif de protection"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nUne machine s'arrête de manière aléatoire après environ vingt minutes de fonctionnement, sans dommage visible. Créez un plan préliminaire de recherche de panne.",
+  "response": "**Symptôme observé** : La machine s'arrête de manière aléatoire après environ vingt minutes de fonctionnement, sans dommage visible.\n\n**Possibles causes** :  \n- Une surchauffe ou un surcharge électrique.  \n- Un problème de commande ou de logique de sécurité.  \n- Un défaut dans le système de lubrification ou de refroidissement.  \n- Un dysfonctionnement dans le système de contrôle (PLC, contrôleur de sécurité).  \n- Un défaut dans les capteurs ou les signaux d'alarme.  \n- Un problème de lubrification ou de maintenance préventive non effectuée.  \n\n**Vérifications préliminaires sécurisées** :  \n- Arrêter la machine et isoler toutes les sources d'énergie selon les procédures de verrouillage/étiquetage (LOTO).  \n- Vérifier les températures des composants critiques (ex. : moteur, réducteur, circuit de refroidissement).  \n- Examiner les signaux d'alarme ou les indicateurs de défaillance du système de contrôle.  \n- Vérifier l'état des capteurs, des borniers, et des circuits de commande.  \n- Contrôler l'état des lubrifiants et des systèmes de refroidissement.  \n- Vérifier l'absence de perte de lubrification ou de débit anormal.  \n\n**Conditions d'arrêt du travail** :  \n- Si la machine s'arrête de manière répétée ou si des signaux d'alarme indiquent un dysfonctionnement critique.  \n- Si des températures anormales ou des défaillances dans le système de contrôle sont détectées.  \n- Si des capteurs ou des signaux d'alarme indiquent un problème non identifiable.  \n\n**Action recommandée** :  \n- Effectuer une inspection complète du système de contrôle (PLC, contrôleur de sécurité) et des signaux d'alarme.  \n- Vérifier les paramètres de fonctionnement (voltage, courant, température, pression) et comparer avec les spécifications du fabricant.  \n- Réaliser un diagnostic approfondi des composants électroniques",
+  "status": "success",
+  "started_at": "2026-07-17T13:52:38.861943+00:00",
+  "completed_at": "2026-07-17T13:53:37.577023+00:00",
+  "duration_seconds": 58.715,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 645,
+    "total_tokens": 1145,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

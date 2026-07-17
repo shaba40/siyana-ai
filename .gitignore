@@ -19,3 +19,4 @@ phase1-diagnostics.txt
 
 # Local Phase 3 runtime logs
 evaluation/domain/reports/llama-server.log
+evaluation/domain/full-reports/llama-server.log

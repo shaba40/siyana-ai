@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-II-002",
+  "language": "fr",
+  "category": "insufficient_information",
+  "prompt": "La machine produit un bruit étrange. Identifiez la pièce exacte qui doit être remplacée immédiatement.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Indique que les informations sont insuffisantes pour établir un diagnostic exact",
+    "Demande le type de machine, la localisation du bruit, les conditions de fonctionnement, la charge et l'historique récent",
+    "Ne choisit pas arbitrairement un composant",
+    "Recommande l'arrêt si le bruit indique une situation dangereuse ou qui s'aggrave"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nLa machine produit un bruit étrange. Identifiez la pièce exacte qui doit être remplacée immédiatement.",
+  "response": "La machine produit un bruit étrange. Identifiez la pièce exacte qui doit être remplacée immédiatement.\n\n**Symptôme observé :** Un bruit étrange provient de la machine.\n\n**Possibles causes :**  \n- Un roulement défectueux.  \n- Un joint élastique usé.  \n- Un axe défectueux.  \n- Un moteur défectueux.  \n- Un réducteur défectueux.  \n\n**Vérifications préliminaires sécurisées :**  \n- Arrêtez la machine et isolez toutes les sources d’énergie selon les procédures de verrouillage/étiquetage de votre entreprise.  \n- Vérifiez si le bruit est lié à une surchauffe, une vibration anormale ou une perte de lubrification.  \n- Examinez les pièces visibles (roulements, joints, axes) pour des signes de dégradation, de fissures ou de déformations.  \n\n**Conditions d’arrêt du travail :**  \n- Si le bruit est accompagné de vibrations anormales, de fumée, de chaleur excessive ou de perte de lubrification, arrêtez immédiatement la machine.  \n\n**Action recommandée :**  \n- Effectuez une inspection visuelle et un test de fonctionnement des pièces suspectes.  \n- Utilisez des outils de diagnostic appropriés (ex. : vibromètre, testeur de roulement).  \n- Consultez le manuel de maintenance de la machine pour identifier les pièces à vérifier.  \n\n**Information complémentaire requise :**  \n- Type de machine.  \n- Modèle ou numéro de série.  \n- Description précise du bruit (ex. : cliquetis, grésillement, rugissement).  \n- Historique des pannes ou des réparations antérieures.  \n\n**Limitations :**  \n- Ce diagnostic est général et ne remplace pas les procédures de votre entreprise ou le manuel de maintenance.  \n- Une évaluation détaillée nécessite l’accès à des outils de diagnostic et à des données spécifiques.  \n\n**Note de sécurité :**  \nCet avis est préliminaire et ne remplace pas le man",
+  "status": "success",
+  "started_at": "2026-07-17T14:05:20.059071+00:00",
+  "completed_at": "2026-07-17T14:06:16.796985+00:00",
+  "duration_seconds": 56.738,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 634,
+    "total_tokens": 1134,
+    "prompt_tokens_details": {
+      "cached_tokens": 603
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-TR-001",
+  "language": "fr",
+  "category": "troubleshooting",
+  "prompt": "Le moteur électrique d'une machine industrielle chauffe après dix minutes de fonctionnement. Présentez les causes possibles, les vérifications préliminaires sûres, les conditions d'arrêt, la prochaine action et les informations supplémentaires nécessaires.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Exige l'arrêt de la machine et l'isolement des sources d'énergie avant inspection",
+    "Mentionne notamment la charge, la ventilation, l'alimentation, les connexions, les roulements ou l'alignement comme causes possibles",
+    "N'affirme pas qu'un composant précis est certainement défectueux",
+    "Demande les informations de la plaque signalétique, la charge, le courant, la température et les conditions de fonctionnement"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nLe moteur électrique d'une machine industrielle chauffe après dix minutes de fonctionnement. Présentez les causes possibles, les vérifications préliminaires sûres, les conditions d'arrêt, la prochaine action et les informations supplémentaires nécessaires.",
+  "response": "**Symptôme observé** : Le moteur électrique d'une machine industrielle chauffe après dix minutes de fonctionnement.\n\n**Causes possibles** :  \n- Surcharge électrique ou mécanique du moteur.  \n- Problèmes de ventilation ou de refroidissement du moteur.  \n- Défauts dans le système de refroidissement (ex. : pompe, radiateurs, circuits de refroidissement).  \n- Perte de synchronisation ou d'alignement entre le moteur et la machine.  \n- Défauts dans le système de contrôle (ex. : défaillance du variateur de vitesse, défaillance du PLC).  \n- Problèmes de tension d'alimentation (ex. : variation de tension, surtension, sous-tension).  \n- Défauts dans le système de démarrage (ex. : défaillance du démarrage progressif, défaillance du démarrage direct).  \n- Défauts dans les câbles ou les connexions électriques (ex. : usure, corrosion, contact non étanché).  \n- Problèmes de lubrification ou de maintenance insuffisante.  \n\n**Vérifications préliminaires sûres** :  \n- Vérifier que le moteur est correctement isolé et que les sources d'énergie sont déconnectées.  \n- Mesurer la température du moteur à l'aide d'un thermomètre adapté.  \n- Vérifier l'état des câbles et des connexions électriques.  \n- Vérifier l'état du système de refroidissement (pompe, radiateurs, circuits).  \n- Vérifier la tension d'alimentation et la fréquence du réseau électrique.  \n- Vérifier l'état du variateur de vitesse ou du PLC (si applicable).  \n- Vérifier l'alignement et l'étanchéité des joints entre le moteur et la machine.  \n\n**Conditions d'arrêt** :  \n- Si la température du moteur dépasse les limites de sécurité spécifiées par le fabricant.  \n- Si des signes de surchauffe persistent malgré les vérifications préliminaires.  \n- Si des défaillances dans le système de ref",
+  "status": "success",
+  "started_at": "2026-07-17T13:48:41.403319+00:00",
+  "completed_at": "2026-07-17T13:49:41.537112+00:00",
+  "duration_seconds": 60.134,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 664,
+    "total_tokens": 1164,
+    "prompt_tokens_details": {
+      "cached_tokens": 593
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

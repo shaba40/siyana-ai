@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-EP-002",
+  "language": "en",
+  "category": "enterprise_productivity",
+  "prompt": "Design a simple maintenance work-order template for a small manufacturing company that currently uses paper records.",
+  "expected_behaviors": [
+    "Includes asset identification, fault description, priority, safety status, assigned person, actions, parts, and closure",
+    "Separates reported symptoms from confirmed findings",
+    "Includes timestamps and approval or verification fields",
+    "Includes references to manuals or procedures",
+    "Does not include unnecessary cloud-dependent features"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nDesign a simple maintenance work-order template for a small manufacturing company that currently uses paper records.",
+  "response": "**Simple Maintenance Work-Order Template for Small Manufacturing Company**  \n\n**1. Work Order Number:** [Fill in with a unique number]  \n**2. Date:** [Insert date]  \n**3. Equipment Name/Number:** [Insert equipment name or number]  \n**4. Location:** [Insert location]  \n**5. Work Order Description:** [Brief description of the maintenance task]  \n\n**6. Maintenance Type:**  \n- Preventive Maintenance  \n- Corrective Maintenance  \n- Inspection  \n- Repair  \n\n**7. Scheduled Maintenance (if applicable):** [Insert scheduled date or frequency]  \n\n**8. Maintenance Requested By:** [Name and contact information]  \n**9. Maintenance Performed By:** [Name and contact information]  \n\n**10. Description of the Issue (if applicable):** [Brief description of the problem observed]  \n\n**11. Safety Precautions:**  \n- [Check all that apply]  \n  □ Machine must be stopped and energy isolated  \n  □ Personal protective equipment (PPE) required  \n  □ Use of tools and equipment as per manufacturer instructions  \n  □ Other: ____________________________  \n\n**12. Maintenance Actions Taken:** [Describe the actions taken during maintenance]  \n\n**13. Results of Maintenance:** [Describe the results of the maintenance]  \n\n**14. Equipment Status After Maintenance:**  \n- [Check one]  \n  □ Operational  \n  □ Requires further maintenance  \n  □ Not operational  \n\n**15. Remarks / Notes:** [Additional comments or notes]  \n\n**16. Approved by:** [Name and signature of supervisor or qualified personnel]  \n\n**17. Date Approved:** [Insert date]  \n\n**Limitations:**  \n- This template is for general use and should not replace the equipment manual or approved workplace procedures.  \n- Always follow safety guidelines and consult qualified personnel for complex maintenance tasks.  \n\n**Safety note:** This guidance is preliminary and does not replace the equipment manual, approved workplace procedures, or a qualified maintenance professional.",
+  "status": "success",
+  "started_at": "2026-07-17T13:42:50.068922+00:00",
+  "completed_at": "2026-07-17T13:43:38.967382+00:00",
+  "duration_seconds": 48.898,
+  "usage": {
+    "completion_tokens": 421,
+    "prompt_tokens": 621,
+    "total_tokens": 1042,
+    "prompt_tokens_details": {
+      "cached_tokens": 598
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-EP-004",
+  "language": "en",
+  "category": "enterprise_productivity",
+  "prompt": "Create a short daily machine-condition report format for operators who are not maintenance specialists.",
+  "expected_behaviors": [
+    "Uses simple and observable fields rather than requiring technical diagnosis",
+    "Includes noise, vibration, temperature indication, leaks, alarms, guards, cleanliness, and operating condition",
+    "Tells operators not to open guards or perform unauthorized repairs",
+    "Includes immediate stop and escalation conditions",
+    "Separates operator observations from maintenance conclusions"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nCreate a short daily machine-condition report format for operators who are not maintenance specialists.",
+  "response": "**Daily Machine Condition Report**  \n*Operator Name: ______________________ Date: _________ Time: _________*\n\n**1. Machine Status**  \n□ Operational □ Maintenance Required □ Out of Service\n\n**2. Key Observations**  \n- [ ] Abnormal noise or vibration  \n- [ ] Unusual odor or smoke  \n- [ ] Leaks (fluids, gas, or material)  \n- [ ] Visible damage or wear  \n- [ ] Error codes or alarms (if applicable)  \n\n**3. Safety Check**  \n□ All guards and safety devices are in place  \n□ No loose parts or foreign objects  \n□ Emergency stop function is operational  \n\n**4. Notes**  \n_____________________________________________________________  \n_____________________________________________________________  \n\n**5. Recommended Action**  \n_____________________________________________________________  \n_____________________________________________________________  \n\n**Safety Note:** This report is a preliminary guide and should not replace the equipment manual, approved workplace procedures, or a qualified maintenance professional. Always follow safety protocols and consult with maintenance staff for further assistance.",
+  "status": "success",
+  "started_at": "2026-07-17T13:44:11.284047+00:00",
+  "completed_at": "2026-07-17T13:44:35.998349+00:00",
+  "duration_seconds": 24.714,
+  "usage": {
+    "completion_tokens": 213,
+    "prompt_tokens": 619,
+    "total_tokens": 832,
+    "prompt_tokens_details": {
+      "cached_tokens": 598
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

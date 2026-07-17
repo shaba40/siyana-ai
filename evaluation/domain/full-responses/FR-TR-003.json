@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-TR-003",
+  "language": "fr",
+  "category": "troubleshooting",
+  "prompt": "Un convoyeur industriel vibre davantage que d'habitude et produit par intermittence un bruit métallique. Expliquez comment un technicien doit aborder le problème en toute sécurité.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Exige l'arrêt et la consignation du convoyeur avant toute inspection rapprochée",
+    "Mentionne comme possibilités le desserrage, le désalignement, les roulements, les rouleaux, la bande, les fixations ou un objet étranger",
+    "Ne recommande pas d'inspecter ou de régler des pièces en mouvement",
+    "Demande la localisation du bruit, la charge, l'historique de maintenance et les modifications récentes"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nUn convoyeur industriel vibre davantage que d'habitude et produit par intermittence un bruit métallique. Expliquez comment un technicien doit aborder le problème en toute sécurité.",
+  "response": "**Symptôme observé** : Un convoyeur industriel vibre davantage que d'habitude et produit par intermittence un bruit métallique.\n\n**Causes possibles** :  \n- Problèmes mécaniques tels que des roulements défectueux, des pièces usées ou des déformations.  \n- Problèmes électriques tels que des courts-circuits ou des défaillances dans le système de commande.  \n- Problèmes de synchronisation ou de débit de la bande transporteuse.  \n- Problèmes de fondation ou d'ancrage du convoyeur.  \n- Problèmes de maintenance non effectuée ou de maintenance mal effectuée.\n\n**Vérifications préliminaires en toute sécurité** :  \n- Arrêter le convoyeur et isoler toutes les sources d'énergie (procedures de verrouillage/étiquetage).  \n- Vérifier l'état des roulements, des supports, des joints et des pièces mécaniques.  \n- Écouter le convoyeur avec un écuteur ou un auditeur de maintenance pour identifier les sources de bruit.  \n- Vérifier l'état des câbles électriques et des connexions.  \n- Vérifier l'état de la fondation et l'ancrage du convoyeur.  \n\n**Conditions d'arrêt du travail** :  \n- Si des vibrations ou des bruits sont suspectés, le convoyeur doit être arrêté et isolé avant toute inspection.  \n- Si des défaillances sont suspectées dans les systèmes de sécurité ou de commande, l'arrêt du travail est obligatoire.  \n\n**Action recommandée** :  \n- Effectuer une inspection visuelle et auditive du convoyeur après avoir isolé toutes les sources d'énergie.  \n- Utiliser des outils de diagnostic appropriés (ex. : oscilloscope, testeur de vibration).  \n- Consultez le manuel du fabricant du convoyeur pour vérifier les normes de maintenance et les limites de performance.  \n- Si nécessaire, faire appel à un technicien qualifié ou à un ingénieur en maintenance.  \n\n**Informations supplémentaires requises** :  \n- Type de convoyeur et modèle.  \n- Historique des pannes ou des réparations ant",
+  "status": "success",
+  "started_at": "2026-07-17T13:50:39.531539+00:00",
+  "completed_at": "2026-07-17T13:51:39.035510+00:00",
+  "duration_seconds": 59.504,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 649,
+    "total_tokens": 1149,
+    "prompt_tokens_details": {
+      "cached_tokens": 602
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

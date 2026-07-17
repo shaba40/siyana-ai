@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-PM-003",
+  "language": "fr",
+  "category": "preventive_maintenance",
+  "prompt": "Élaborez une liste générale de maintenance préventive pour un convoyeur à bande utilisé dans une petite usine.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Exige l'arrêt et la consignation avant l'inspection des zones protégées",
+    "Inclut l'état, l'alignement et la tension de la bande, les rouleaux, les roulements, les protecteurs, les fixations, le nettoyage et les enregistrements",
+    "Ne recommande aucun réglage pendant le mouvement du convoyeur",
+    "N'invente pas de tolérances ou d'intervalles propres à l'équipement"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nÉlaborez une liste générale de maintenance préventive pour un convoyeur à bande utilisé dans une petite usine.",
+  "response": "**Objectif de maintenance préventive :**  \nAssurer le bon fonctionnement, la sécurité et la longévité du convoyeur à bande dans une petite usine, en prévenant les pannes et en respectant les règles de sécurité.\n\n**Préparation et isolation sécuritaire :**  \n- Arrêter le convoyeur et isoler toutes les sources d’énergie (électrique, hydraulique, pneumatique) selon les procédures de verrouillage/étiquetage (LOTO) de l’entreprise.  \n- Vérifier l’absence de tension, de pression ou de flux avant tout examen ou réparation.  \n- Mettre en place des barrières de sécurité et avertir les personnes non impliquées.\n\n**Liste de maintenance préventive :**\n\n1. **Vérification régulière des poulies et des roulements**  \n   - Contrôler l’état des poulies, des roulements et des supports.  \n   - Remplacer les roulements s'ils montrent des signes de usure, de défectuosité ou de dérangement.  \n   - Vérifier l’alignement des poulies pour éviter les déséquilibres.\n\n2. **Inspection des chaînes ou bandes transportantes**  \n   - Vérifier l’état des bandes (déchirures, usure, déformations).  \n   - Contrôler l’usure des roulements de poulies et des supports.  \n   - Remplacer les bandes ou les roulements si nécessaire.\n\n3. **Vérification des roulements de la roue motrice**  \n   - Contrôler l’état des roulements de la roue motrice.  \n   - Remplacer les roulements s'ils montrent des signes de défaillance ou de surchauffe.\n\n4. **Nettoyage des composants**  \n   - Nettoyer régulièrement les surfaces des poulies, des roulements et des bandes pour éviter l’accumulation de poussière, de saleté ou de débris.  \n   - Vérifier l’absence de débris ou de résidus qui pourraient causer des pannes.\n\n5. **Vérification des systèmes",
+  "status": "success",
+  "started_at": "2026-07-17T13:55:35.258730+00:00",
+  "completed_at": "2026-07-17T13:56:33.888319+00:00",
+  "duration_seconds": 58.63,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 632,
+    "total_tokens": 1132,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

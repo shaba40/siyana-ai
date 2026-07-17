@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-TR-001",
+  "language": "en",
+  "category": "troubleshooting",
+  "prompt": "A pneumatic cylinder on a production machine has become slow in both directions. Provide possible causes, safe preliminary checks, stop-work conditions, the recommended next action, and the additional information needed.",
+  "expected_behaviors": [
+    "States that the machine must be stopped and hazardous energy isolated before inspection",
+    "Mentions possible pressure, leakage, restriction, valve, filtration, or mechanical causes",
+    "Does not recommend exceeding the manufacturer pressure limit",
+    "Distinguishes possible causes from confirmed causes",
+    "Requests relevant equipment and operating information"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nA pneumatic cylinder on a production machine has become slow in both directions. Provide possible causes, safe preliminary checks, stop-work conditions, the recommended next action, and the additional information needed.",
+  "response": "**Possible Causes:**  \n- Air pressure in the system is too low.  \n- Air leaks in the system or in the cylinder.  \n- Faulty or clogged pilot valve.  \n- Worn or damaged cylinder seals.  \n- Obstruction in the cylinder or cylinder rod.  \n- Incorrect or damaged cylinder mounting.  \n\n**Safe Preliminary Checks:**  \n- Check the air pressure supply to the system and ensure it is within the manufacturer’s specifications.  \n- Inspect the cylinder for visible damage, leaks, or obstructions.  \n- Check the pilot valve for proper operation and signs of wear or clogging.  \n- Verify that the cylinder is properly mounted and aligned.  \n- Ensure all safety guards and energy-isolation procedures are followed before inspecting or testing the system.  \n\n**Stop-Work Conditions:**  \n- If the cylinder is leaking air or showing signs of damage.  \n- If the system pressure is below the manufacturer’s specified range.  \n- If the pilot valve is suspected to be faulty or clogged.  \n- If the cylinder is not properly isolated from the system for maintenance.  \n\n**Recommended Next Action:**  \n- Isolate the system from the production machine and ensure all energy sources are disconnected.  \n- Measure and verify the air pressure in the system.  \n- Inspect the cylinder for physical damage, leaks, or obstructions.  \n- Test the pilot valve for proper operation.  \n- If the issue is not resolved, consult the equipment manual or a qualified maintenance technician.  \n\n**Additional Information Needed:**  \n- The manufacturer’s specifications for air pressure and system requirements.  \n- The exact model and serial number of the pneumatic cylinder.  \n- The system’s current air pressure levels.  \n- Any recent changes or maintenance performed on the system.  \n- The condition of the pilot valve and any signs of wear or clogging.  \n\n**Limitations:**  \n- This response is general and does not replace the equipment manual or approved workplace procedures.  \n- Specific diagnostic steps may vary depending on the system design and manufacturer specifications.  \n- Always follow the organization’s lockout/tagout procedures before inspecting or working on the system.  \n\nSafety note: This guidance is preliminary and does not replace the equipment manual, approved workplace procedures, or a qualified maintenance professional.",
+  "status": "success",
+  "started_at": "2026-07-17T13:26:15.990451+00:00",
+  "completed_at": "2026-07-17T13:27:29.839946+00:00",
+  "duration_seconds": 73.849,
+  "usage": {
+    "completion_tokens": 467,
+    "prompt_tokens": 641,
+    "total_tokens": 1108,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

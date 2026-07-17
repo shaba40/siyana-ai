@@ -1,0 +1,36 @@
+{
+  "prompt_id": "EN-PM-004",
+  "language": "en",
+  "category": "preventive_maintenance",
+  "prompt": "Create a safe inspection checklist for a small hydraulic power unit. Include fluid, hoses, filters, temperature, leaks, and stored-energy hazards.",
+  "expected_behaviors": [
+    "Includes shutdown, pressure release, and energy isolation",
+    "Warns about injection injury and stored hydraulic pressure",
+    "Includes fluid condition, reservoir level, hoses, fittings, filters, temperature, noise, and leak checks",
+    "Does not recommend searching for leaks with bare hands",
+    "Does not invent fluid specifications or maintenance frequencies"
+  ],
+  "user_message_sent": "/no_think\n\nRespond only in English.\n\nCreate a safe inspection checklist for a small hydraulic power unit. Include fluid, hoses, filters, temperature, leaks, and stored-energy hazards.",
+  "response": "**Safe Inspection Checklist for a Small Hydraulic Power Unit**  \n\n**1. Maintenance Objective**  \nTo ensure the hydraulic power unit is safe, functional, and compliant with maintenance standards.  \n\n**2. Safe Preparation and Isolation**  \n- Ensure the machine is powered down and all energy sources are isolated.  \n- Follow the organization’s approved lockout/tagout (LOTO) procedure.  \n- Verify that all hydraulic pressure is fully released.  \n\n**3. Inspection Checklist**  \n- **Fluid**  \n  - Check fluid level against the manufacturer’s specifications.  \n  - Inspect fluid for discoloration, contamination, or unusual odors.  \n  - Ensure the fluid is the correct type and viscosity as specified in the manual.  \n\n- **Hoses**  \n  - Inspect all hoses for cracks, bulges, or leaks.  \n  - Check for wear or damage at connections.  \n  - Ensure hoses are properly secured and not pinched or twisted.  \n\n- **Filters**  \n  - Check filter condition (clogged, damaged, or missing).  \n  - Ensure filters are replaced according to the manufacturer’s schedule.  \n  - Verify that filter elements are clean and not compromised.  \n\n- **Temperature**  \n  - Measure and record the temperature of the hydraulic system.  \n  - Ensure temperature is within the manufacturer’s specified range.  \n  - Check for overheating or abnormal temperature fluctuations.  \n\n- **Leaks**  \n  - Inspect the system for any signs of fluid leakage.  \n  - Check seals, gaskets, and connections for potential leakage points.  \n  - Ensure all leaks are repaired before re-energizing the system.  \n\n- **Stored-Energy Hazards**  \n  - Verify that all residual pressure in the system is fully released.  \n  - Check for any stored energy in hydraulic accumulators or other components.  \n  - Ensure that the system is fully depressurized before inspection or maintenance.  \n\n**4. Documentation Requirements**  \n- Record fluid level, filter condition, hose integrity, and temperature readings.  \n- Note any leaks, damage, or abnormalities observed.  \n- Document the date and time of inspection.  \n\n**5. Stop-Work Conditions**  \n- If any of the following are present, stop work and investigate:  \n  - Fluid contamination or discoloration.  \n  - Leaks or damage to hoses, filters, or seals.  \n  - Abnormal temperature",
+  "status": "success",
+  "started_at": "2026-07-17T13:40:16.088675+00:00",
+  "completed_at": "2026-07-17T13:41:15.247822+00:00",
+  "duration_seconds": 59.159,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 631,
+    "total_tokens": 1131,
+    "prompt_tokens_details": {
+      "cached_tokens": 598
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

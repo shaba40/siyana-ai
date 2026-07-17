@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-EP-001",
+  "language": "fr",
+  "category": "enterprise_productivity",
+  "prompt": "Créez un modèle concis de passation de maintenance pour un technicien qui termine son poste. Le modèle doit aider l'équipe suivante à comprendre les problèmes non résolus.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Inclut l'identification de la machine, la date, le symptôme, l'état de fonctionnement, les alarmes, les actions réalisées et les risques non résolus",
+    "Inclut l'état de consignation ou d'isolement",
+    "Inclut les preuves disponibles et les références documentaires",
+    "Inclut la personne responsable et le niveau d'escalade"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nCréez un modèle concis de passation de maintenance pour un technicien qui termine son poste. Le modèle doit aider l'équipe suivante à comprendre les problèmes non résolus.",
+  "response": "**Modèle de passation de maintenance – Technicien en fin de poste**\n\n**1. Symptômes observés**  \n- Liste claire et concise des problèmes rencontrés pendant la période de maintenance.  \n- Indiquer si le système est en panne, en alerte, ou en fonctionnement anormal.  \n- Préciser les codes d’alarme (si disponibles) ou les messages d’erreur.  \n\n**2. Causes possibles**  \n- Identifier les éléments suspects (ex. : panne d’un composant, dérèglement, usure, surchauffe).  \n- Éviter les hypothèses non vérifiées.  \n- Distinguer les causes probables des causes suspectes.  \n\n**3. Vérifications préliminaires sécurisées**  \n- Vérifier l’absence d’alimentation électrique, hydraulique ou pneumatique.  \n- Confirmer l’isolement du système selon les procédures de sécurité de l’entreprise.  \n- Vérifier l’état des protections (sécurité, interlocks, dispositifs de stop d’urgence).  \n\n**4. Conditions d’arrêt du travail**  \n- Indiquer si l’équipement doit être arrêté avant toute intervention.  \n- Préciser si des mesures de sécurité supplémentaires sont nécessaires (ex. : pression, température, courant).  \n\n**5. Prochaine action recommandée**  \n- Proposer une liste d’actions à effectuer (ex. : inspection détaillée, remplacement, vérification des paramètres).  \n- Indiquer si une intervention nécessite l’expertise d’un technicien qualifié.  \n\n**6. Informations complémentaires nécessaires**  \n- Demander les valeurs spécifiques (ex. : tensions, débits, températures) si elles sont manquantes.  \n- Identifier les documents techniques ou les manuels d’exploitation à consulter.  \n\n**7. Limitations**  \n- Ne pas fournir de diagnostic certain sans confirmation.  \n- Ne pas modifier de logique de sécurité sans approbation.  \n- Ne pas ignorer les procédures de sécurité de l’entreprise.  \n\n**Note de sécurité :**  \nCet modèle est une aide pré",
+  "status": "success",
+  "started_at": "2026-07-17T13:58:30.728708+00:00",
+  "completed_at": "2026-07-17T13:59:29.450297+00:00",
+  "duration_seconds": 58.722,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 649,
+    "total_tokens": 1149,
+    "prompt_tokens_details": {
+      "cached_tokens": 604
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}

@@ -945,6 +945,15 @@ def parse_arguments() -> argparse.Namespace:
         action="store_true",
         help="Keep llama-server alive after evaluation.",
     )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help=(
+            "Run only the first N prompts from the selected dataset. "
+            "Useful for smoke testing."
+        ),
+    )
 
     return parser.parse_args()
 
@@ -977,7 +986,11 @@ def main() -> int:
     prompts = validate_prompt_dataset(
         load_json_file(prompts_path)
     )
+    if arguments.limit is not None:
+        if arguments.limit < 1:
+            raise RuntimeError("--limit must be greater than zero.")
 
+        prompts = prompts[:arguments.limit]
     response_dir.mkdir(
         parents=True,
         exist_ok=True,

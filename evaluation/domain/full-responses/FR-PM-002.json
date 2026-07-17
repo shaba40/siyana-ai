@@ -1,0 +1,36 @@
+{
+  "prompt_id": "FR-PM-002",
+  "language": "fr",
+  "category": "preventive_maintenance",
+  "prompt": "Préparez une liste de contrôle de maintenance préventive pour un moteur électrique industriel et son entraînement mécanique. Le manuel de l'équipement n'a pas encore été fourni.",
+  "expected_behaviors": [
+    "Répond uniquement en français",
+    "Exige l'arrêt et l'isolement des sources d'énergie avant l'inspection physique",
+    "Inclut la ventilation, la fixation, les connexions, les roulements, l'alignement, l'accouplement, la propreté et la documentation",
+    "N'invente pas de type de lubrifiant, de quantité, de couple de serrage ou d'intervalle",
+    "Réserve les travaux électriques aux personnes qualifiées et autorisées"
+  ],
+  "user_message_sent": "/no_think\n\nRépondez uniquement en français.\n\nPréparez une liste de contrôle de maintenance préventive pour un moteur électrique industriel et son entraînement mécanique. Le manuel de l'équipement n'a pas encore été fourni.",
+  "response": "**Liste de contrôle de maintenance préventive pour un moteur électrique et son entraînement mécanique**  \n*(À compléter avec les spécifications fournies par le manuel de l'équipement)*\n\n---\n\n**1. Objectif de la maintenance**  \nVérifier l'état du moteur électrique et de son entraînement mécanique pour prévenir les pannes, assurer la sécurité et prolonger la durée de vie de l'équipement.\n\n---\n\n**2. Préparation et isolation sécuritaire**  \n- Arrêter l'équipement et isoler toutes les sources d'énergie (électrique, hydraulique, pneumatique) conformément aux procédures de verrouillage/étiquetage (LOTO).  \n- Vérifier que l'équipement est complètement arrêté et que les mouvements sont bloqués.  \n- Mettre en place des barrières de sécurité et informer les autres travailleurs du travail en cours.\n\n---\n\n**3. Liste d'inspection**  \n\n**A. Moteur électrique**  \n- [ ] Vérifier l'état général du moteur (corrosion, dégâts, fissures).  \n- [ ] Vérifier l'étanchéité des joints et des connecteurs.  \n- [ ] Vérifier l'absence de poussière, de saleté ou de débris.  \n- [ ] Vérifier les bornes et les câbles pour détecter des signes de surchauffe, de dégradation ou de déformation.  \n- [ ] Vérifier la tension et le courant du moteur (si des outils de mesure sont disponibles).  \n- [ ] Vérifier l'absence de bruit anormal ou de vibrations anormales.  \n- [ ] Vérifier l'état des bornes de connexion et des fuses.  \n- [ ] Vérifier la présence de signes de surchauffe (décoloration, odeur de brûlé).  \n\n**B. Entraînement mécanique**  \n- [ ] Vérifier l'état des roulements, des roulements à billes, et des supports.  \n- [ ] Vérifier l'absence de saleté, de poussière ou de débris",
+  "status": "success",
+  "started_at": "2026-07-17T13:54:36.599776+00:00",
+  "completed_at": "2026-07-17T13:55:35.255980+00:00",
+  "duration_seconds": 58.656,
+  "usage": {
+    "completion_tokens": 500,
+    "prompt_tokens": 651,
+    "total_tokens": 1151,
+    "prompt_tokens_details": {
+      "cached_tokens": 601
+    }
+  },
+  "model_configuration": {
+    "base_model": "Qwen3-4B",
+    "model_file": "Qwen3-4B-Q4_K_M.gguf",
+    "quantization": "GGUF Q4_K_M",
+    "runtime": "llama.cpp",
+    "temperature": 0.2,
+    "max_tokens": 500,
+    "thinking_mode": "disabled using /no_think"
+  }
+}
