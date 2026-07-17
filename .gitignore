@@ -1,22 +1,20 @@
-# Model weights — never commit these to git
-model/*.gguf
-model/*.bin
-model/*.safetensors
-
-# macOS
-.DS_Store
-
-# Python
-__pycache__/
-*.pyc
-.venv/
-
-# Local profiler output
-submission.json
-audit.json
-phase1-diagnostics.txt
-phase1-diagnostics.txt
 
 # Local Phase 3 runtime logs
-evaluation/domain/reports/llama-server.log
+# Local profiler output
+# Model weights — never commit these to git
+# Phase 4 local runtime logs
+# Python
+# macOS
+*.pyc
+.DS_Store
+.venv/
+__pycache__/
+audit.json
 evaluation/domain/full-reports/llama-server.log
+evaluation/domain/reports/llama-server.log
+model/*.bin
+model/*.gguf
+model/*.safetensors
+phase1-diagnostics.txt
+prototype/backend/llama-server.log
+submission.json
