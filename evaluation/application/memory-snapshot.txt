@@ -1,0 +1,11 @@
+=== DATE ===
+2026-07-18T13:51:54+01:00
+
+=== SYSTEM MEMORY ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       3.8Gi       1.4Gi       3.5Mi       2.6Gi       3.8Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+=== SIYANA AI PROCESSES ===
+   1334     326 71076  0.8  0.1 python -m uvicorn prototype.backend.app.main:app --host 127.0.0.1 --port 8000
+   1337    1334 5736116 72.2 186 /home/hama/Projects/siyana-ai/.venv/bin/llama-server -m /home/hama/Projects/siyana-ai/model/Qwen3-4B-Q4_K_M.gguf --host 127.0.0.1 --port 8080 -c 4096 -t 4 --jinja
