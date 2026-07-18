@@ -1,0 +1,18 @@
+Pneumatic Cylinder Troubleshooting
+
+Before inspecting the pneumatic machine, stop the machine,
+isolate all hazardous energy sources, and release stored air
+pressure according to the approved workplace procedure.
+
+A cylinder that moves slowly in both directions may be affected
+by low supply pressure, a restricted filter, a partially closed
+flow-control valve, a leaking hose, internal cylinder leakage,
+or excessive mechanical load.
+
+Never increase the pressure above the equipment manufacturer's
+specified limit. Do not search for leaks by putting hands close
+to moving machine components.
+
+Record the measured supply pressure, machine model, operating
+load, symptoms, and recent maintenance history before escalating
+the problem to qualified maintenance personnel.

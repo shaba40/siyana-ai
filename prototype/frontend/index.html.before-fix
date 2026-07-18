@@ -15,7 +15,7 @@
 
     <title>Siyana AI</title>
 
-    <link rel="stylesheet" href="/static/styles.css">
+    /static/styles.css
 </head>
 
 <body>
@@ -575,6 +575,6 @@
         </p>
     </footer>
 
-    <script src="/static/app.js"></script>
+    /static/app.js</body>script>
 </body>
 </html>
