@@ -308,7 +308,18 @@ evaluation/profiler/participant-report.json
 
 Official competition measurements will be performed on the published ADTC
 Standard Laptop and may differ from development results.
+### ADTC participant profiler
 
+### ADTC participant profiler
+
+- Peak RSS: 4287.84 MB
+- Steady-state RSS: 4164.24 MB
+- Generation throughput: 11.19 tokens/second
+- Prompt-processing throughput: Not reported by the local profiler environment
+- First-token latency: 10055.74 ms
+- CPU utilization: 50.9% (p99)
+- Thermal information: Not reported by the local profiler environment
+- Profiler mode: Participant, accuracy skipped
 ## Reproduction
 
 ### Download the selected model
