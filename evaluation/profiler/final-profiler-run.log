@@ -1,0 +1,4 @@
+adtc-profiler mode=participant model=Qwen3-4B-Q4_K_M.gguf
+→ running llama-bench (throughput)…
+→ skipping accuracy (--skip-accuracy)
+✓ wrote /home/hama/Projects/siyana-ai/evaluation/profiler/participant-report.json

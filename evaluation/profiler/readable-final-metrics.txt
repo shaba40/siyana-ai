@@ -1,0 +1,11 @@
+environment.cpu_model: 13th Gen Intel(R) Core(TM) i7-13620H
+throughput.tokens_per_second_generation: 11.61
+throughput.first_token_latency_ms: 9392.58
+throughput.prompt_tokens: 512
+throughput.generated_tokens: 128
+memory.peak_rss_mb: 4287.84
+memory.steady_state_rss_mb: 4157.93
+memory.peak_vms_mb: 4799.93
+cpu_thermal.cpu_percent_p99: 50.8
+cpu_thermal.core_temp_c_peak: None
+cpu_thermal.throttled: False
