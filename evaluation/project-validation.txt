@@ -1,0 +1,51 @@
+========================================================================
+Siyana AI project validation
+========================================================================
+
+[PASS] Required file .gitignore
+[PASS] Required file metadata.json
+[PASS] Required file download_model.sh
+[PASS] Required file REPORT.md
+[PASS] Required file requirements-prototype.txt
+[PASS] Required file config/system_prompt.txt
+[PASS] Required file model/Qwen3-4B-Q4_K_M.gguf
+[PASS] Required file prototype/backend/app/main.py
+[PASS] Required file prototype/backend/app/document_store.py
+[PASS] Required file prototype/backend/app/rag_api.py
+[PASS] Required file prototype/frontend/index.html
+[PASS] Required file prototype/frontend/styles.css
+[PASS] Required file prototype/frontend/app.js
+[PASS] Required file scripts/start_siyana.sh
+[PASS] Required file scripts/stop_siyana.sh
+[PASS] Python syntax
+[PASS] Bash syntax download_model.sh
+[PASS] Bash syntax scripts/start_siyana.sh
+[PASS] Bash syntax scripts/stop_siyana.sh
+[PASS] JSON validity metadata.json
+[PASS] JSON validity evaluation/domain/prompts-pilot.json
+[PASS] JSON validity evaluation/domain/prompts-full.json
+[PASS] HTML stylesheet reference
+[PASS] HTML JavaScript reference
+[PASS] HTML chat form
+[PASS] HTML manual input
+[PASS] HTML citation list
+[PASS] HTML is not escaped or Markdown-wrapped
+[PASS] CSS brace balance
+[PASS] JavaScript syntax
+[PASS] GGUF file size: 2.33 GiB
+[PASS] GGUF is excluded from Git: .gitignore:16:model/*.gguf	model/Qwen3-4B-Q4_K_M.gguf
+[PASS] No GGUF model is tracked by Git
+[PASS] Runtime command python: /home/hama/Projects/siyana-ai/.venv/bin/python
+[PASS] Runtime command llama-cli: /home/hama/Projects/siyana-ai/.venv/bin/llama-cli
+[PASS] Runtime command llama-server: /home/hama/Projects/siyana-ai/.venv/bin/llama-server
+[PASS] Runtime command llama-bench: /home/hama/Projects/siyana-ai/.venv/bin/llama-bench
+[PASS] Runtime command adtc-profiler: /home/hama/Projects/siyana-ai/.venv/bin/adtc-profiler
+[PASS] SQLite FTS5
+[PASS] metadata.json has no known placeholders
+[PASS] metadata.json contains exactly two test prompts: 2
+[PASS] metadata model path: model/Qwen3-4B-Q4_K_M.gguf
+[PASS] No Hugging Face token pattern in tracked files
+
+========================================================================
+All Siyana AI validation checks passed.
+========================================================================
