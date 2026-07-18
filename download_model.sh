@@ -1,38 +1,76 @@
 #!/usr/bin/env bash
-# Download your model weight file.
-#
-# Rules:
-#   - Must be idempotent (safe to run multiple times).
-#   - Must download without any credentials (public URL only).
-#   - The output path must match `_runtime.model_path` in metadata.json.
 
 set -euo pipefail
 
-HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MODEL_DIR="$HERE/model"
-MODEL_FILE="$MODEL_DIR/SmolLM2-135M-Instruct-Q4_K_M.gguf"
+MODEL_DIRECTORY="model"
+MODEL_FILENAME="Qwen3-4B-Q4_K_M.gguf"
+MODEL_PATH="${MODEL_DIRECTORY}/${MODEL_FILENAME}"
 
-# ── Replace this URL with your public model weight URL ─────────────────────────
-MODEL_URL="https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF/resolve/main/SmolLM2-135M-Instruct-Q4_K_M.gguf"
-# ───────────────────────────────────────────────────────────────────────────────
+MODEL_URL="https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf?download=true"
 
-mkdir -p "$MODEL_DIR"
+EXPECTED_SHA256="7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
 
-if [[ -f "$MODEL_FILE" ]]; then
-  echo "model already present at $MODEL_FILE — skipping download"
-  exit 0
+mkdir -p "$MODEL_DIRECTORY"
+
+verify_model() {
+    local actual_sha256
+
+    actual_sha256="$(
+        sha256sum "$MODEL_PATH" |
+        awk '{print $1}'
+    )"
+
+    if [ "$actual_sha256" != "$EXPECTED_SHA256" ]; then
+        echo "ERROR: Model checksum verification failed."
+        echo "Expected: $EXPECTED_SHA256"
+        echo "Actual:   $actual_sha256"
+        return 1
+    fi
+
+    echo "Model checksum verified."
+    return 0
+}
+
+if [ -f "$MODEL_PATH" ]; then
+    echo "Model already exists:"
+    echo "$MODEL_PATH"
+
+    if verify_model; then
+        ls -lh "$MODEL_PATH"
+        exit 0
+    fi
+
+    echo "Removing the invalid local file."
+    rm -f "$MODEL_PATH"
 fi
 
-echo "downloading $MODEL_URL → $MODEL_FILE (~80 MB)…"
+echo "Downloading Qwen3-4B Q4_K_M..."
+echo "Source: Qwen/Qwen3-4B-GGUF"
+echo "Destination: $MODEL_PATH"
 
 if command -v curl > /dev/null 2>&1; then
-  curl -L --fail --progress-bar -o "$MODEL_FILE.partial" "$MODEL_URL"
+    curl \
+        --fail \
+        --location \
+        --continue-at - \
+        --retry 5 \
+        --retry-delay 3 \
+        --output "$MODEL_PATH" \
+        "$MODEL_URL"
 elif command -v wget > /dev/null 2>&1; then
-  wget --show-progress -O "$MODEL_FILE.partial" "$MODEL_URL"
+    wget \
+        --continue \
+        --output-document="$MODEL_PATH" \
+        "$MODEL_URL"
 else
-  echo "error: neither curl nor wget found" >&2
-  exit 1
+    echo "ERROR: curl or wget is required."
+    exit 1
 fi
 
-mv "$MODEL_FILE.partial" "$MODEL_FILE"
-echo "done: $MODEL_FILE"
+if ! verify_model; then
+    rm -f "$MODEL_PATH"
+    exit 1
+fi
+
+echo "Model downloaded successfully:"
+ls -lh "$MODEL_PATH"

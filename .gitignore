@@ -24,3 +24,9 @@ prototype/data/documents/
 prototype/data/*.db
 prototype/data/*.db-shm
 prototype/data/*.db-wal
+
+# Local Phase 5 submission backups
+*.phase5b-backup
+
+# Local Phase 5 submission backups
+*.phase5b-backup
