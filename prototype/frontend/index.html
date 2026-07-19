@@ -209,7 +209,49 @@
 
         <!-- Question and answer workspace -->
         <section class="workspace">
-            <form
+            
+<section class="sprint-tools" aria-labelledby="sprintToolsTitle">
+    <div class="sprint-tools-header">
+        <div>
+            <span class="sprint-kicker">
+                WORKFLOW
+            </span>
+            <h2 id="sprintToolsTitle">
+                Start with the task at hand
+            </h2>
+            <p>
+                Choose a maintenance workflow or begin with
+                a common industrial scenario.
+            </p>
+        </div>
+        <label class="task-mode-control">
+            <span>Task mode</span>
+            <select id="taskMode">
+                <option value="troubleshooting">
+                    Troubleshooting
+                </option>
+                <option value="preventive_maintenance">
+                    Preventive maintenance
+                </option>
+                <option value="safety_review">
+                    Safety review
+                </option>
+                <option value="shift_handover">
+                    Shift handover
+                </option>
+                <option value="work_order">
+                    Work-order draft
+                </option>
+            </select>
+        </label>
+    </div>
+    <div
+        id="scenarioList"
+        class="scenario-list"
+        aria-label="Quick-start maintenance scenarios"
+    ></div>
+</section>
+<form
                 id="chatForm"
                 class="question-panel"
             >
@@ -404,6 +446,55 @@
                     </button>
                 </div>
             </form>
+<section
+    id="progressPanel"
+    class="generation-progress"
+    aria-live="polite"
+    hidden
+>
+    <div class="progress-summary">
+        <div>
+            <span class="progress-indicator"></span>
+            <strong id="progressTitle">
+                Working locally
+            </strong>
+        </div>
+        <time id="progressTimer">
+            0 seconds
+        </time>
+    </div>
+    <p id="progressMessage">
+        Preparing the maintenance request…
+    </p>
+    <ol
+        id="progressStages"
+        class="progress-stages"
+    ></ol>
+</section>
+
+<section
+    id="safetyState"
+    class="safety-state safety-state-general"
+    aria-live="polite"
+    hidden
+>
+    <span
+        class="safety-state-symbol"
+        aria-hidden="true"
+    >
+        !
+    </span>
+    <div>
+        <strong id="safetyStateLabel">
+            GENERAL GUIDANCE
+        </strong>
+        <p id="safetyStateText">
+            Review the guidance and verify
+            equipment-specific information.
+        </p>
+    </div>
+</section>
+
 
             <!-- Answer area -->
             <section
@@ -576,5 +667,6 @@
     </footer>
 
     <script src="/static/app.js"></script>
+<script src="/static/sprint1.js"></script>
 </body>
 </html>
