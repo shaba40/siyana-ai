@@ -205,6 +205,121 @@
                     </p>
                 </div>
             </div>
+
+<section
+    class="manual-search-panel"
+    aria-labelledby="manualSearchHeading"
+>
+    <div class="manual-search-header">
+        <div>
+            <span class="manual-search-kicker">
+                LOCAL SEARCH
+            </span>
+
+            <h2 id="manualSearchHeading">
+                Search imported manuals directly
+            </h2>
+
+            <p>
+                Find a technical passage before asking the
+                language model. Search remains on this computer.
+            </p>
+        </div>
+
+        <span
+            id="manualSearchCount"
+            class="manual-search-count"
+        ></span>
+    </div>
+
+    <form
+        id="manualSearchForm"
+        class="manual-search-form"
+    >
+        <label class="manual-search-query">
+            <span class="visually-hidden">
+                Manual search query
+            </span>
+
+            <input
+                id="manualSearchInput"
+                type="search"
+                minlength="2"
+                maxlength="1000"
+                autocomplete="off"
+                placeholder="Search a symptom, component, alarm code, or procedure..."
+            >
+        </label>
+
+        <label class="manual-search-limit-control">
+            <span>Results</span>
+
+            <select id="manualSearchLimit">
+                <option value="3">3</option>
+                <option value="5" selected>5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+            </select>
+        </label>
+
+        <button
+            id="manualSearchButton"
+            class="manual-search-button"
+            type="submit"
+        >
+            <span id="manualSearchButtonText">
+                Search manuals
+            </span>
+
+            <span
+                class="manual-search-button-icon"
+                aria-hidden="true"
+            >
+                →
+            </span>
+        </button>
+    </form>
+
+    <p class="manual-search-privacy">
+        Search runs through the local SQLite index.
+        No query or document is sent to a cloud search service.
+    </p>
+
+    <div
+        id="manualSearchMessage"
+        class="manual-search-message"
+        role="status"
+        aria-live="polite"
+        hidden
+    ></div>
+
+    <div
+        id="manualSearchResults"
+        class="manual-search-results"
+        aria-live="polite"
+    >
+        <div
+            id="manualSearchEmpty"
+            class="manual-search-state"
+        >
+            <span class="manual-search-state-symbol">
+                ⌕
+            </span>
+
+            <div>
+                <strong>
+                    Search the local knowledge base
+                </strong>
+
+                <p>
+                    Enter an equipment term, symptom,
+                    component, or alarm code.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
         </section>
 
         <!-- Question and answer workspace -->
@@ -668,5 +783,6 @@
 
     <script src="/static/app.js"></script>
 <script src="/static/sprint1.js"></script>
+    /static/sprint2.jsscript>
 </body>
 </html>
