@@ -1,0 +1,929 @@
+/*
+ * Siyana AI — Sprint 3A
+ * Premium industrial design foundation
+ *
+ * This stylesheet intentionally loads after styles.css.
+ * It improves the visual system without changing existing
+ * HTML IDs or JavaScript contracts.
+ */
+
+/* =========================================================
+   1. Design tokens
+   ========================================================= */
+
+:root {
+    color-scheme: light;
+
+    /* Brand */
+    --siyana-navy-950: #071521;
+    --siyana-navy-900: #0d2235;
+    --siyana-navy-800: #15344d;
+    --siyana-navy-700: #214a66;
+
+    --siyana-teal-800: #075f68;
+    --siyana-teal-700: #08717b;
+    --siyana-teal-600: #0a828d;
+    --siyana-teal-500: #1597a0;
+    --siyana-teal-100: #dff3f3;
+    --siyana-teal-50: #effafa;
+
+    /* Neutral surfaces */
+    --siyana-background: #edf2f3;
+    --siyana-background-deep: #e5ebed;
+    --siyana-surface: #ffffff;
+    --siyana-surface-soft: #f6f8f9;
+    --siyana-surface-muted: #eef3f4;
+
+    /* Text */
+    --siyana-text: #172630;
+    --siyana-text-secondary: #4d606b;
+    --siyana-text-muted: #75858e;
+    --siyana-text-inverse: #f7fbfc;
+
+    /* Borders */
+    --siyana-border: #d5dfe2;
+    --siyana-border-strong: #bbcbd0;
+    --siyana-border-focus: #087b86;
+
+    /* States */
+    --siyana-success: #247452;
+    --siyana-success-soft: #e8f5ee;
+    --siyana-warning: #976414;
+    --siyana-warning-soft: #fff5dc;
+    --siyana-danger: #aa4038;
+    --siyana-danger-soft: #fff0ee;
+    --siyana-info: #2d668f;
+    --siyana-info-soft: #edf6fc;
+
+    /* Typography */
+    --siyana-font:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    --siyana-font-mono:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace;
+
+    /* Spacing */
+    --siyana-space-1: 4px;
+    --siyana-space-2: 8px;
+    --siyana-space-3: 12px;
+    --siyana-space-4: 16px;
+    --siyana-space-5: 20px;
+    --siyana-space-6: 24px;
+    --siyana-space-7: 32px;
+    --siyana-space-8: 40px;
+    --siyana-space-9: 48px;
+
+    /* Shape */
+    --siyana-radius-sm: 6px;
+    --siyana-radius-md: 10px;
+    --siyana-radius-lg: 14px;
+    --siyana-radius-xl: 18px;
+    --siyana-radius-pill: 999px;
+
+    /* Shadows */
+    --siyana-shadow-xs:
+        0 1px 2px rgba(7, 21, 33, 0.04);
+
+    --siyana-shadow-sm:
+        0 4px 12px rgba(7, 21, 33, 0.06);
+
+    --siyana-shadow-md:
+        0 12px 30px rgba(7, 21, 33, 0.08);
+
+    /* Motion */
+    --siyana-transition-fast: 140ms ease;
+    --siyana-transition: 200ms ease;
+
+    /*
+     * Compatibility aliases used by earlier frontend files.
+     */
+    --navy: var(--siyana-navy-900);
+    --teal: var(--siyana-teal-700);
+    --blue: var(--siyana-info);
+    --text: var(--siyana-text);
+    --muted: var(--siyana-text-secondary);
+    --border: var(--siyana-border);
+    --surface: var(--siyana-surface);
+    --surface-soft: var(--siyana-surface-muted);
+}
+
+/* =========================================================
+   2. Document foundation
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+    background: var(--siyana-background);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--siyana-background) 0%,
+            var(--siyana-surface-soft) 100%
+        );
+
+    color: var(--siyana-text);
+    font-family: var(--siyana-font);
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button,
+select {
+    cursor: pointer;
+}
+
+button:disabled,
+select:disabled,
+input:disabled,
+textarea:disabled {
+    cursor: not-allowed;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--siyana-teal-700);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--siyana-navy-800);
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    color: var(--siyana-navy-950);
+    font-weight: 720;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+h2 {
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+}
+
+h3 {
+    font-size: 1.05rem;
+}
+
+::selection {
+    background: var(--siyana-teal-100);
+    color: var(--siyana-navy-950);
+}
+
+/* =========================================================
+   3. Keyboard accessibility
+   ========================================================= */
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(8, 123, 134, 0.28);
+    outline-offset: 3px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    border-color: var(--siyana-border-focus);
+    box-shadow:
+        0 0 0 4px rgba(8, 123, 134, 0.12);
+}
+
+/* =========================================================
+   4. Form controls
+   ========================================================= */
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 13px;
+
+    border: 1px solid var(--siyana-border-strong);
+    border-radius: var(--siyana-radius-md);
+
+    outline: none;
+    background: var(--siyana-surface);
+    color: var(--siyana-text);
+
+    transition:
+        border-color var(--siyana-transition-fast),
+        box-shadow var(--siyana-transition-fast),
+        background-color var(--siyana-transition-fast);
+}
+
+textarea {
+    min-height: 120px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--siyana-text-muted);
+    opacity: 1;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):hover,
+select:hover,
+textarea:hover {
+    border-color: #9fb3b9;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus,
+select:focus,
+textarea:focus {
+    border-color: var(--siyana-border-focus);
+    box-shadow:
+        0 0 0 4px rgba(8, 123, 134, 0.1);
+}
+
+label {
+    color: var(--siyana-text-secondary);
+    font-size: 0.82rem;
+    font-weight: 650;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input[type="file"] {
+    padding: 8px;
+}
+
+input[type="file"]::file-selector-button {
+    margin-inline-end: 10px;
+    padding: 8px 11px;
+
+    border: 1px solid var(--siyana-border);
+    border-radius: var(--siyana-radius-sm);
+
+    background: var(--siyana-surface-muted);
+    color: var(--siyana-navy-800);
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* =========================================================
+   5. Button system
+   ========================================================= */
+
+button {
+    min-height: 40px;
+    padding: 9px 14px;
+
+    border: 1px solid var(--siyana-border);
+    border-radius: var(--siyana-radius-md);
+
+    background: var(--siyana-surface);
+    color: var(--siyana-navy-800);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    transition:
+        color var(--siyana-transition-fast),
+        background-color var(--siyana-transition-fast),
+        border-color var(--siyana-transition-fast),
+        box-shadow var(--siyana-transition-fast),
+        transform var(--siyana-transition-fast);
+}
+
+button:hover:not(:disabled) {
+    border-color: var(--siyana-border-strong);
+    background: var(--siyana-surface-muted);
+    color: var(--siyana-navy-950);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+button:disabled {
+    opacity: 0.55;
+}
+
+/*
+ * Existing important action buttons receive the primary style.
+ */
+button[type="submit"],
+.manual-search-button,
+.manual-result-action.primary {
+    border-color: var(--siyana-teal-700);
+    background: var(--siyana-teal-700);
+    color: var(--siyana-text-inverse);
+
+    box-shadow:
+        0 1px 2px rgba(7, 21, 33, 0.08);
+}
+
+button[type="submit"]:hover:not(:disabled),
+.manual-search-button:hover:not(:disabled),
+.manual-result-action.primary:hover:not(:disabled) {
+    border-color: var(--siyana-navy-800);
+    background: var(--siyana-navy-800);
+    color: #ffffff;
+}
+
+/* =========================================================
+   6. Card and panel foundation
+   ========================================================= */
+
+section,
+.card,
+.panel {
+    border-color: var(--siyana-border);
+}
+
+.manual-search-panel {
+    margin-top: var(--siyana-space-6);
+    padding: clamp(18px, 3vw, 26px);
+
+    border: 1px solid var(--siyana-border);
+    border-radius: var(--siyana-radius-xl);
+
+    background: var(--siyana-surface);
+    box-shadow: var(--siyana-shadow-sm);
+}
+
+.manual-search-header {
+    margin-bottom: var(--siyana-space-5);
+}
+
+.manual-search-kicker {
+    color: var(--siyana-teal-700);
+    font-size: 0.67rem;
+    font-weight: 800;
+    letter-spacing: 0.115em;
+}
+
+.manual-search-header h2 {
+    margin: 6px 0 5px;
+    color: var(--siyana-navy-950);
+    font-size: 1.3rem;
+}
+
+.manual-search-header p {
+    max-width: 62ch;
+    color: var(--siyana-text-secondary);
+    font-size: 0.84rem;
+}
+
+.manual-search-count {
+    min-height: 27px;
+    padding: 5px 10px;
+
+    border: 1px solid var(--siyana-border);
+    border-radius: var(--siyana-radius-pill);
+
+    background: var(--siyana-surface-soft);
+    color: var(--siyana-teal-800);
+
+    font-size: 0.72rem;
+    font-weight: 750;
+}
+
+/* =========================================================
+   7. Sprint 2 manual search
+   ========================================================= */
+
+.manual-search-form {
+    gap: var(--siyana-space-3);
+}
+
+.manual-search-query input {
+    min-height: 46px;
+    padding-inline: 14px;
+
+    border-color: var(--siyana-border-strong);
+    border-radius: var(--siyana-radius-md);
+}
+
+.manual-search-limit {
+    color: var(--siyana-text-secondary);
+    font-size: 0.7rem;
+}
+
+.manual-search-limit select {
+    min-width: 74px;
+    min-height: 46px;
+}
+
+.manual-search-button {
+    min-width: 170px;
+    min-height: 46px;
+    padding-inline: 17px;
+}
+
+.manual-search-privacy {
+    margin-top: 10px;
+    color: var(--siyana-text-muted);
+    font-size: 0.7rem;
+}
+
+.manual-search-results {
+    gap: var(--siyana-space-3);
+    margin-top: var(--siyana-space-5);
+}
+
+.manual-search-empty {
+    padding: var(--siyana-space-5);
+
+    border: 1px dashed var(--siyana-border-strong);
+    border-radius: var(--siyana-radius-lg);
+
+    background: var(--siyana-surface-soft);
+    box-shadow: none;
+}
+
+.manual-search-empty > span {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+
+    border: 1px solid #d2e8e9;
+    border-radius: var(--siyana-radius-md);
+
+    background: var(--siyana-teal-50);
+    color: var(--siyana-teal-700);
+}
+
+.manual-search-empty strong {
+    color: var(--siyana-navy-900);
+    font-size: 0.88rem;
+}
+
+.manual-search-empty p {
+    color: var(--siyana-text-secondary);
+    font-size: 0.78rem;
+}
+
+.manual-result-card {
+    position: relative;
+    overflow: hidden;
+
+    padding: clamp(16px, 2vw, 20px);
+
+    border: 1px solid var(--siyana-border);
+    border-radius: var(--siyana-radius-lg);
+
+    background: var(--siyana-surface);
+    box-shadow: var(--siyana-shadow-xs);
+
+    transition:
+        border-color var(--siyana-transition),
+        box-shadow var(--siyana-transition),
+        transform var(--siyana-transition);
+}
+
+.manual-result-card::before {
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 0;
+
+    width: 3px;
+
+    background: var(--siyana-teal-600);
+    content: "";
+}
+
+.manual-result-card:hover {
+    border-color: #b8cdd1;
+    box-shadow: var(--siyana-shadow-sm);
+    transform: translateY(-1px);
+}
+
+.manual-result-label {
+    color: var(--siyana-teal-700);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+}
+
+.manual-result-title {
+    margin-top: 5px;
+
+    color: var(--siyana-navy-900);
+    font-size: 0.91rem;
+    font-weight: 750;
+}
+
+.manual-result-page {
+    border: 1px solid var(--siyana-border);
+    border-radius: var(--siyana-radius-pill);
+
+    background: var(--siyana-surface-soft);
+    color: var(--siyana-text-secondary);
+
+    font-size: 0.69rem;
+    font-weight: 650;
+}
+
+.manual-result-relevance {
+    color: var(--siyana-text-muted);
+    font-size: 0.7rem;
+}
+
+.manual-result-relevance > span:first-child {
+    background: var(--siyana-success);
+    box-shadow: 0 0 0 3px var(--siyana-success-soft);
+}
+
+.manual-result-excerpt {
+    margin-top: var(--siyana-space-4);
+    color: #3e515c;
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.manual-result-actions {
+    padding-top: var(--siyana-space-3);
+    border-top: 1px solid var(--siyana-surface-muted);
+}
+
+.manual-result-action {
+    min-height: 34px;
+    padding: 7px 11px;
+
+    border-color: var(--siyana-border);
+    border-radius: var(--siyana-radius-sm);
+
+    background: var(--siyana-surface);
+    color: var(--siyana-teal-800);
+
+    font-size: 0.7rem;
+}
+
+.manual-result-action:hover:not(:disabled) {
+    border-color: var(--siyana-teal-600);
+    background: var(--siyana-teal-50);
+    color: var(--siyana-teal-800);
+}
+
+.manual-result-action.primary {
+    border-color: var(--siyana-teal-700);
+    background: var(--siyana-teal-700);
+    color: #ffffff;
+}
+
+/* =========================================================
+   8. Messages and application states
+   ========================================================= */
+
+.manual-search-message {
+    margin-top: var(--siyana-space-3);
+    padding: 11px 13px;
+
+    border-radius: var(--siyana-radius-md);
+
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.manual-search-message.warning {
+    border-color: #e5cc95;
+    background: var(--siyana-warning-soft);
+    color: #76500f;
+}
+
+.manual-search-message.error {
+    border-color: #e1aaa5;
+    background: var(--siyana-danger-soft);
+    color: var(--siyana-danger);
+}
+
+.manual-search-empty.no-results {
+    border-color: #dbc58f;
+    background: #fffdf7;
+}
+
+.manual-search-empty.error {
+    border-color: #dfaaa5;
+    background: var(--siyana-danger-soft);
+}
+
+/* =========================================================
+   9. Citations
+   ========================================================= */
+
+.citation-card,
+.citation-item {
+    position: relative;
+
+    border-color: var(--siyana-border) !important;
+    border-radius: var(--siyana-radius-lg) !important;
+
+    background: var(--siyana-surface) !important;
+    box-shadow: var(--siyana-shadow-xs);
+}
+
+.citation-card p,
+.citation-item p {
+    color: var(--siyana-text-secondary);
+    line-height: 1.65;
+}
+
+.sprint2-citation-actions {
+    padding-top: 10px;
+    border-top: 1px solid var(--siyana-surface-muted);
+}
+
+.sprint2-citation-actions button {
+    min-height: 32px;
+    padding: 6px 10px;
+
+    border-color: var(--siyana-border);
+    border-radius: var(--siyana-radius-sm);
+
+    background: var(--siyana-surface);
+    color: var(--siyana-teal-800);
+
+    font-size: 0.7rem;
+}
+
+.sprint2-citation-actions button:hover {
+    border-color: var(--siyana-teal-600);
+    background: var(--siyana-teal-50);
+}
+
+/* =========================================================
+   10. Document list and generic content
+   ========================================================= */
+
+#documentList:empty::after {
+    display: block;
+    padding: var(--siyana-space-5);
+
+    border: 1px dashed var(--siyana-border-strong);
+    border-radius: var(--siyana-radius-md);
+
+    background: var(--siyana-surface-soft);
+    color: var(--siyana-text-muted);
+
+    font-size: 0.8rem;
+    text-align: center;
+
+    content: "No imported manuals yet.";
+}
+
+#documentList > * {
+    border-color: var(--siyana-border) !important;
+}
+
+code,
+pre {
+    font-family: var(--siyana-font-mono);
+}
+
+pre {
+    overflow: auto;
+    padding: var(--siyana-space-4);
+
+    border: 1px solid var(--siyana-border);
+    border-radius: var(--siyana-radius-md);
+
+    background: var(--siyana-navy-950);
+    color: #eaf3f5;
+}
+
+/* =========================================================
+   11. Scrollbars
+   ========================================================= */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color:
+        #adbec3
+        transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: var(--siyana-radius-pill);
+
+    background: #adbec3;
+    background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #879da4;
+    background-clip: padding-box;
+}
+
+/* =========================================================
+   12. RTL support
+   ========================================================= */
+
+html[dir="rtl"] body {
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+    text-align: right;
+}
+
+html[dir="rtl"] .manual-result-card::before {
+    inset-inline-start: 0;
+}
+
+html[dir="rtl"] .manual-search-header,
+html[dir="rtl"] .manual-result-header,
+html[dir="rtl"] .manual-result-actions,
+html[dir="rtl"] .sprint2-citation-actions {
+    direction: rtl;
+}
+
+/* =========================================================
+   13. Responsive foundation
+   ========================================================= */
+
+@media (max-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+
+    .manual-search-panel {
+        border-radius: var(--siyana-radius-lg);
+    }
+}
+
+@media (max-width: 760px) {
+    .manual-search-header {
+        gap: var(--siyana-space-3);
+    }
+
+    .manual-search-count {
+        align-self: flex-start;
+    }
+
+    .manual-search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .manual-search-limit select {
+        width: 100%;
+    }
+
+    .manual-search-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        background: var(--siyana-surface-soft);
+    }
+
+    .manual-search-panel {
+        margin-top: var(--siyana-space-4);
+        padding: var(--siyana-space-4);
+
+        border-radius: var(--siyana-radius-md);
+        box-shadow: none;
+    }
+
+    .manual-result-card {
+        padding: var(--siyana-space-4);
+        border-radius: var(--siyana-radius-md);
+    }
+
+    .manual-result-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .manual-result-action {
+        width: 100%;
+        min-height: 40px;
+    }
+}
+
+/* =========================================================
+   14. Reduced motion
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+/* =========================================================
+   15. Print support
+   ========================================================= */
+
+@media print {
+    body {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    button,
+    .manual-search-form,
+    .manual-search-privacy,
+    .manual-result-actions,
+    .sprint2-citation-actions {
+        display: none !important;
+    }
+
+    .manual-search-panel,
+    .manual-result-card,
+    .citation-card,
+    .citation-item {
+        border: 1px solid #bcbcbc !important;
+        box-shadow: none !important;
+    }
+
+    .manual-result-excerpt.is-collapsed,
+    .citation-card p.is-collapsed,
+    .citation-item p.is-collapsed {
+        display: block;
+        overflow: visible;
+    }
+}
