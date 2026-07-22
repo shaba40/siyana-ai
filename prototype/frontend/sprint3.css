@@ -2206,3 +2206,300 @@ html[dir="rtl"] .switch-control input:checked
         width: 100%;
     }
 }
+
+/* =========================================================
+   Professional redesign — section navigation
+   ========================================================= */
+
+.section-navigation {
+    position: sticky;
+    z-index: 40;
+    top: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 8px 20px;
+
+    border-bottom: 1px solid var(--border);
+
+    background: rgba(244, 248, 247, 0.96);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.section-navigation a {
+    padding: 7px 11px;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-small);
+
+    color: var(--muted);
+
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        border-color 140ms ease,
+        background-color 140ms ease,
+        color 140ms ease;
+}
+
+.section-navigation a:hover {
+    border-color: var(--border);
+
+    background: var(--surface);
+    color: var(--teal);
+}
+
+.section-navigation a:focus-visible {
+    border-color: var(--teal);
+
+    outline: 2px solid rgba(11, 112, 117, 0.2);
+    outline-offset: 2px;
+}
+
+#maintenanceWorkspace,
+#manualLibrary,
+#manualSearchSection {
+    scroll-margin-top: 125px;
+}
+
+/* Arabic navigation */
+
+html[dir="rtl"] .section-navigation {
+    direction: rtl;
+}
+
+/* Mobile navigation */
+
+@media (max-width: 640px) {
+    .section-navigation {
+        top: 88px;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        padding: 7px 12px;
+
+        scrollbar-width: none;
+    }
+
+    .section-navigation::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-navigation a {
+        flex: 0 0 auto;
+
+        white-space: nowrap;
+    }
+
+    #maintenanceWorkspace,
+    #manualLibrary,
+    #manualSearchSection {
+        scroll-margin-top: 150px;
+    }
+}
+
+/* =========================================================
+   Professional redesign — organized workspace
+   ========================================================= */
+
+/*
+ * Desired desktop structure:
+ *
+ * [ Quick-start workflows — full width                 ]
+ * [ Question form              ][ Generated answer      ]
+ */
+
+.workspace {
+    display: grid !important;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr) !important;
+    grid-template-areas:
+        "tools tools"
+        "question answer"
+        "progress answer"
+        "safety answer";
+    gap: 18px !important;
+    align-items: start;
+}
+
+/* Quick-start workflows span both columns. */
+
+.workspace > .sprint-tools {
+    grid-area: tools;
+
+    width: 100%;
+    margin: 0 !important;
+}
+
+/* Question form stays in the left column. */
+
+.workspace > #chatForm {
+    grid-area: question;
+
+    width: 100%;
+    min-width: 0;
+    margin: 0 !important;
+}
+
+/* Generation progress appears underneath the form. */
+
+.workspace > #progressPanel {
+    grid-area: progress;
+
+    width: 100%;
+    margin: 0 !important;
+}
+
+/* Safety classification appears underneath progress. */
+
+.workspace > #safetyState {
+    grid-area: safety;
+
+    width: 100%;
+    margin: 0 !important;
+}
+
+/* Answer occupies the complete right column. */
+
+.workspace > #answerPanel {
+    grid-area: answer;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 520px;
+    margin: 0 !important;
+}
+
+/*
+ * Keep the empty answer state vertically balanced without
+ * creating unnecessary page height.
+ */
+
+#answerPanel .empty-state {
+    min-height: 430px;
+}
+
+/*
+ * The page sections use consistent vertical spacing.
+ */
+
+#maintenanceWorkspace,
+#manualLibrary,
+#manualSearchSection {
+    margin-bottom: 20px;
+}
+
+/*
+ * Reduce excessive empty margins inherited from older rules.
+ */
+
+.manual-panel,
+.manual-search-panel,
+.sprint-tools,
+.question-panel,
+.answer-panel,
+.limitations-panel {
+    margin-top: 0;
+}
+
+/*
+ * Make the navigation clearer and less visually detached.
+ */
+
+.section-navigation {
+    min-height: 45px;
+    gap: 4px;
+
+    padding: 7px 20px;
+}
+
+.section-navigation a {
+    position: relative;
+
+    min-height: 31px;
+    padding: 7px 12px;
+}
+
+.section-navigation a::after {
+    position: absolute;
+    right: 12px;
+    bottom: 3px;
+    left: 12px;
+
+    height: 2px;
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    content: "";
+}
+
+.section-navigation a:hover::after,
+.section-navigation a:focus-visible::after {
+    background: var(--teal);
+}
+
+/*
+ * Tablet layout:
+ * workflow, form and answer become one clear vertical flow.
+ */
+
+@media (max-width: 1060px) {
+    .workspace {
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+            "tools"
+            "question"
+            "progress"
+            "safety"
+            "answer";
+    }
+
+    .workspace > #answerPanel {
+        min-height: 380px;
+    }
+
+    #answerPanel .empty-state {
+        min-height: 290px;
+    }
+}
+
+/*
+ * Mobile layout refinement.
+ */
+
+@media (max-width: 640px) {
+    .workspace {
+        gap: 14px !important;
+    }
+
+    .workspace > #answerPanel {
+        min-height: 320px;
+    }
+
+    #answerPanel .empty-state {
+        min-height: 240px;
+    }
+}
+
+/* Functional hidden-state enforcement */
+
+.workspace > [hidden],
+#progressPanel[hidden],
+#safetyState[hidden],
+#answerContent[hidden],
+#errorPanel[hidden],
+#citationsSection[hidden] {
+    display: none !important;
+}

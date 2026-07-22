@@ -16,9 +16,24 @@
     <title>Siyana AI</title>
 
     <link rel="stylesheet" href="/static/styles.css">
-    <link rel="stylesheet" href="/static/sprint3.css?v=professional-2">
+    <link rel="stylesheet" href="/static/sprint3.css?v=professional-4">
 </head>
+<nav
+    class="section-navigation"
+    aria-label="Application sections"
+>
+    <a href="#maintenanceWorkspace">
+        Maintenance workspace
+    </a>
 
+    <a href="#manualLibrary">
+        Manual library
+    </a>
+
+    <a href="#manualSearchSection">
+        Manual search
+    </a>
+</nav>
 <body>
     <header class="topbar">
         <div class="brand">
@@ -96,7 +111,11 @@
         </section>
 
         <!-- Local manual management -->
-        <section class="manual-panel">
+        <section
+    id="manualLibrary"
+    class="manual-panel"
+    aria-labelledby="manualHeading"
+>>
             <div class="manual-heading">
                 <div>
                     <span class="section-label">
@@ -208,6 +227,7 @@
             </div>
 
 <section
+    id="manualSearchSection"
     class="manual-search-panel"
     aria-labelledby="manualSearchHeading"
 >
@@ -324,7 +344,11 @@
         </section>
 
         <!-- Question and answer workspace -->
-        <section class="workspace">
+        <section
+    id="maintenanceWorkspace"
+    class="workspace"
+    aria-label="Maintenance guidance workspace"
+>
             
 <section class="sprint-tools" aria-labelledby="sprintToolsTitle">
     <div class="sprint-tools-header">
